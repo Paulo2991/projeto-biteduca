@@ -1,0 +1,13 @@
+@import url(/css/login/login.css);
+:root{
+    --bg-cor:45deg,#0762d9,  #3e236b;
+    --cor-titulo: #40578c;
+    --cor-botao:   #4c66a5;
+}
+
+body{
+    background:linear-gradient(var(--bg-cor));
+    height: 100vh;
+    box-sizing: border-box;
+}
+

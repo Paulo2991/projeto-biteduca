@@ -1,0 +1,27 @@
+.titulo{
+    color: var(--cor-titulo);
+}
+
+.botao{
+    background-color: var(--cor-botao);
+    font-size: 1.20em;
+    width: 25%;
+}
+
+.logo{
+    width: 60%;
+}
+
+.botao:hover{
+ background-color:#1e3363;
+}
+
+.label-customizada{
+    margin-left: 85px;
+}
+
+@media screen and (max-width:720px) {
+    .custom-container{
+        width: 100%;
+    }
+}
