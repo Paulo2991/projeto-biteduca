@@ -1,6 +1,8 @@
 :root{
     --azul:#0762d9;
     --font-pagina:Montserrat, Sanserif;
+    --bg-cor:45deg,#0762d9,  #3e236b;
+
 }
 
 body{
@@ -49,4 +51,4 @@ body{
 
 .bg-cursos-andamento{
     background-color:  #ecf0f1;
-}
+} 
