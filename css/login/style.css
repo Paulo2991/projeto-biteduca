@@ -1,4 +1,4 @@
-@import url(/css/login/login.css);
+@import url(css/login/login.css);
 :root{
     --bg-cor:45deg,#0762d9,  #3e236b;
     --cor-titulo: #40578c;
@@ -9,5 +9,92 @@ body{
     background:linear-gradient(var(--bg-cor));
     height: 100vh;
     box-sizing: border-box;
+}
+
+.corpo{
+    background-color:#1518c0;
+}
+
+.heading{
+    text-align:center;
+    font-size:32px;
+    color:white;
+    font-family:'Roboto', sans-serif;
+    font-weight:900;
+    font-style:italic;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:200px;
+    margin-bottom:1rem; 
+}
+
+/* Estilos para a classe "card" */
+.custom-card {
+    width: 18rem;
+    box-shadow:10px 10px 10px 10px white;
+    border-radius:2rem;
+    margin-right:2rem;
+    margin-bottom:1rem; 
+    display:block;
+}
+
+/* Estilos para a classe "custom-card-body" */
+.custom-card-body {
+    padding: 1rem;
+}
+
+/* Estilos para a classe "custom-card-title" */
+.custom-card-title {
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+    text-align:left;
+    color:white;
+}
+
+/* Estilos para a classe "custom-card-link" */
+.custom-card-link {
+    color:white;
+    text-decoration: none;
+}
+
+.certificado{
+    border-radius:1rem;
+    align-items:center;
+    margin-left:60px;
+    width:100px;
+}
+
+.cardCaracteristicas{
+    width:20rem;
+    box-shadow:10px 10px 10px 10px blue;
+    background-color:white;
+    border-radius:2rem;
+    margin-right:2rem;
+    margin-bottom:1rem;
+    display:block;
+}
+
+.custom-card-text{
+    font-family:'Courier New, Courier', sans-serif;
+    font-size:18px;
+    font-style:normal;
+    font-weight:400;
+}
+
+.cardTitleCarcteristicas{
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+    text-align:center;
+    color:blue;
+}
+
+.row{
+    margin-left:500px;
+    bottom:200px;
+    display:flex;
+    position:relative;
 }
 
