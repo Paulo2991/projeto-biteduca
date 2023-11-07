@@ -1,0 +1,52 @@
+:root{
+    --azul:#0762d9;
+    --font-pagina:Montserrat, Sanserif;
+}
+
+body{
+    font-family: var(--font-pagina);
+}
+
+.item-personalizado{
+    color: var(--azul);
+}
+.menu-personalizado{
+    margin-right: 10rem;
+}
+.titulo-cursos{
+    color: #454545;
+}
+.barra-customizada{
+    background-color:  #3fbd23 ;
+}
+
+.card-customizado{
+    height: 200px;
+}
+
+.fundo-titulo{
+    background-color: var(--azul);
+}
+
+.img-card-customizado{
+    height: 200px;
+    width: 200px;
+}
+
+.sobre-titulo{
+    background-color:#ecc100;
+}
+.bg-formacoes{
+    background-color: #999999;
+}
+
+.bg-sobre{
+    background-color: #999999;
+}
+.envio-atividades{
+    background-color:  #aed6f1;
+}
+
+.bg-cursos-andamento{
+    background-color:  #ecf0f1;
+}
