@@ -1,0 +1,58 @@
+.bg-foto{
+    background: linear-gradient(var(--degrade-cor));
+    height: auto;
+}
+
+.bg-foto-baixo{
+    background-color:#f8f9f9 ;
+    height: 70px;
+}
+
+.perfil{
+    width: 500px;
+}
+
+.nome-aluno{
+    font-size: 2rem;
+}
+
+.titulo{
+    background-color:#0762d9 ;
+}
+
+.icon-certificado{
+    width: 2rem;
+    height: 2rem;
+}
+
+.icone-link{
+    width: 1rem;
+    height: auto;
+}
+
+.card-pesonalizado-cor{
+    background-color:#edf6fc;
+}
+.menu-personalizado{
+    margin-right: 200px;
+}
+
+@media screen and (max-width:900px) {
+    .perfil-customizado{
+        flex-direction: column;
+    }
+    .perfil{
+        width: 100%;
+    }
+   
+    .card-pesonalizado-cor{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .cursos-concluidos{
+        flex-direction: column;
+        align-items: center;
+    }
+}

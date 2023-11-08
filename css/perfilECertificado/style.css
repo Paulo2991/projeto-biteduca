@@ -1,0 +1,7 @@
+:root{
+    --font-pagina: Montserrat, Sanserif;
+    --degrade-cor:#0762d9,#3e236b;
+}
+body{
+    font-family: var(--font-pagina) ;
+}
