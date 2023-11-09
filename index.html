@@ -9,40 +9,49 @@
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon1.png">
 
-  <link rel="stylesheet" href="css/login/style.css">
+  <link rel="stylesheet" href="css_home/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
-  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Open+Sans:wght@400;700&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
   <header>
     <nav class="navbar fixed-top navbar-expand-lg  navbar-light bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="img/logo-colorido.png" alt="Seu Logotipo" width="250" >
+          <img src="img/logo-colorido.png" alt="Seu Logotipo" width="150" >
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link menu-item" href="#">Cursos</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Cursos
+              </a>
+              <ul class="dropdown-menu menu-item" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item active" >Todos os Cursos</a></li>
+                  <li><a class="dropdown-item" href="curso_gratuito.html">Curso Gratuito</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link menu-item" href="#">Formações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item" href="#">Sobre</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menu-item" href="#">Por onde começar?</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menu-item" href="#">Como funciona</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu-item" href="#">Curso Gratuito</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -58,22 +67,24 @@
         </header>
         <!-- Background image -->
 
-
-        <div id="intro-example" class="p-5 text-center bg-image2 image-bg" style="margin-top: 70px;">
+    <section class="mb-5 mb-sm-5 mb-md-5 mb-lg-5" style="margin-bottom: 10px;" >
+        <div id="intro-example" class="p-5 text-center bg-image2 image-bg fade-in" style="margin-top: 50px;">
           <div class="mask">
             <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white highlight-text-bg"> 
+              <div class="text-white highlight-text-bg fade-in">
                 <h2 class="mb-3">Acesso aos cursos mais procurados do mercado</h2>
-                <h6 class="mb-4">
-                  Invista em seu crescimento profissional e destaque-se em sua área. Mais de 200 cursos liberados para qualquer um dos seus planos de assinatura
-                </h6>
-                <a class="btn btn-warning align-items-center m-2 btn-responsive" href="https://web.whatsapp.com/" role="button" rel="nofollow" target="_blank">
-                 <strong>Quero fazer minha inscrição</strong>
-               </a>
-             </div>
-           </div>
-         </div>
-       </div>
+                <h6 class="mb-4">Invista em seu crescimento profissional e destaque-se em sua área. Mais de 200 cursos liberados para qualquer um dos seus planos de assinatura</h6>
+                <a class=" btn-warning align-items-center m-2 btn-responsive fade-in" href="https://web.whatsapp.com/" role="button" rel="nofollow" target="_blank">
+                  <strong>Quero fazer minha inscrição</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+        
+        
 
 
        <!-- Background image -->
@@ -129,46 +140,111 @@
           </div>
         </div>
       </main>
+
       <section class="corpo">
         <div class="cards">
-          <div class="custom-card" id="cardCaracteristicas">
+          <div class="custom-card">
             <div class="custom-card-body">
-              <h5 class="cardTitleCarcteristicas">Curso Com Certificado</h5>
+              <h5 class="custom-card-title">A Excelência acadêmica </h5>
               <hr>
-              <p class="custom-card-text">Donec ullamcorper aliquam nibh eget pulvinar. Morbi non elit eu enim vehicula eleifend id sed velit. Fusce efficitur augue sed dapibus ultrices. Suspendisse blandit ligula in maximus lacinia. Nulla eu dui tellus. Sed in ante iaculis, consequat tellus non, ullamcorper mi. In lacinia sit amet ante in bibendum. Nulla in hendrerit dui, vitae tempus est. Quisque convallis leo a nibh dictum posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at maximus dolor.</p>
+              <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
             </div>
           </div>
-          <div class="custom-card" id="cardCaracteristicas">
+          <div class="custom-card">
             <div class="custom-card-body">
-              <h5 class="cardTitleCarcteristicas">Gerenciamento On-line</h5>
+              <h5 class="custom-card-title">Gerenciamento On-line</h5>
               <hr>
-              <p class="custom-card-text">Donec ullamcorper aliquam nibh eget pulvinar. Morbi non elit eu enim vehicula eleifend id sed velit. Fusce efficitur augue sed dapibus ultrices. Suspendisse blandit ligula in maximus lacinia. Nulla eu dui tellus. Sed in ante iaculis, consequat tellus non, ullamcorper mi. In lacinia sit amet ante in bibendum. Nulla in hendrerit dui, vitae tempus est. Quisque convallis leo a nibh dictum posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at maximus dolor.</p>
+              <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
             </div>
           </div>
         </div>
         <div class="cards">
-          <div class="custom-card" id="cardCaracteristicas">
+          <div class="custom-card">
             <div class="custom-card-body">
-              <h5 class="cardTitleCarcteristicas">O Caminhos Carreira</h5>
+              <h5 class="custom-card-title">Os Caminhos da Carreira</h5>
               <hr>
-              <p class="custom-card-text">Donec ullamcorper aliquam nibh eget pulvinar. Morbi non elit eu enim vehicula eleifend id sed velit. Fusce efficitur augue sed dapibus ultrices. Suspendisse blandit ligula in maximus lacinia. Nulla eu dui tellus. Sed in ante iaculis, consequat tellus non, ullamcorper mi. In lacinia sit amet ante in bibendum. Nulla in hendrerit dui, vitae tempus est. Quisque convallis leo a nibh dictum posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at maximus dolor.</p>
+              <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
             </div>
           </div>
-          <div class="custom-card" id="cardCaracteristicas">
+          <div class="custom-card">
             <div class="custom-card-body">
-              <h5 class="cardTitleCarcteristicas">Modern Careers</h5>
+              <h5 class="custom-card-title">Modern Careers</h5>
               <hr>
-              <p class="custom-card-text">Donec ullamcorper aliquam nibh eget pulvinar. Morbi non elit eu enim vehicula eleifend id sed velit. Fusce efficitur augue sed dapibus ultrices. Suspendisse blandit ligula in maximus lacinia. Nulla eu dui tellus. Sed in ante iaculis, consequat tellus non, ullamcorper mi. In lacinia sit amet ante in bibendum. Nulla in hendrerit dui, vitae tempus est. Quisque convallis leo a nibh dictum posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at maximus dolor.</p>
+              <p class="custom-card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
             </div>
           </div>
-          <div class="custom-card" id="cardLateral">
+          <div class="custom-card">
             <div class="custom-card-body">
-              <h5 class="cardTitleCarcteristicas" style="color:white;">Curso Com Certificado</h5>
+              <h5 class="custom-card-title">Escola Características </h5>
               <hr>
-              <p class="custom-card-text">Donec ullamcorper aliquam nibh eget pulvinar. Morbi non elit eu enim vehicula eleifend id sed velit. Fusce efficitur augue sed dapibus ultrices. Suspendisse blandit ligula in maximus lacinia. Nulla eu dui tellus. Sed in ante iaculis, consequat tellus non, ullamcorper mi. In lacinia sit amet ante in bibendum. Nulla in hendrerit dui, vitae tempus est. Quisque convallis leo a nibh dictum posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at maximus dolor.</p>
+              <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur. 
+              </p>
+              <button class="btn-warning align-items-center m-2 btn-responsive" role="button" rel="nofollow"  type="button"><strong>Veja Mais</strong></button>
+            </div>
+          </div> 
+          
+          </div>
+        </div>
+      </section>
+
+
+
+        <footer class="text-light">
+          <div class="container py-3">
+            <div class="text-center mb-4 p-4">
+              <ol class="list-unstyled d-flex justify-content-center">
+                <li class="mb-3" style="margin-right: 20px;">Termo e Avaliações</li>
+                <li class="mb-3" style="margin-right: 20px;">Política de Privacidade</li>
+                <li class="mb-3" style="margin-right: 20px;">Contato</li>
+                <li class="mb-3" style="margin-right: 20px;">Atendimento por WhatsApp</li>
+                <li class="mb-3" style="margin-right: 10px;">FAQ (Perguntas Frequentes)</li>
+              </ol>
+        
+              <p class="mt-4">Curso Online Ltda - Todos os direitos reservados<br>CNPJ: 00.000.000./0000-00 Avenida 348 1306, Vila- Leopoldina - São Paulo SP</p>
+        
+              <div class="text-center">
+                <img src="/img/logo-branco.png" width="250" class="mb-4" alt="Logotipo">
+              </div>
+        
+              <div class="d-flex justify-content-center align-items-center">
+                <ul class="list-unstyled d-flex" style="margin: 0; padding: 0;">
+                  <li class="rodape__item-midias-sociais mb-4 mr-4">
+                    <a href="https://www.facebook.com">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li class="rodape__item-midias-sociais mb-4 mr-4">
+                    <a href="https://www.instagram.com">
+                      <i class="fab fa-instagram-square"></i>
+                    </a>
+                  </li>
+                  <li class="rodape__item-midias-sociais mb-4 mr-4">
+                    <a href="https://www.linkedin.com/in/rduartedelima/">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li class="rodape__item-midias-sociais mb-4 mr-4">
+                    <a href="https://www.youtube.com/channel/UC5TvpjArLEoJnn5V5fG9chQ">
+                      <i class="fab fa-youtube-square"></i>
+                    </a>
+                  </li>
+                  <li class="rodape__item-midias-sociais mb-4">
+                    <a href="https://api.whatsapp.com/send?phone=5511941616806">
+                      <i class="fab fa-whatsapp-square"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p>&copy; 2023 Copyright: Todos os direitos reservados</p>
             </div>
           </div>
-        </section>
+        </footer>
+        
+        
+          
+          
+      </body>
+      </html>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       </body>
       </html>
