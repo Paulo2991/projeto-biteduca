@@ -1,7 +1,4 @@
-
-
   @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Open+Sans:wght@400;700&family=Roboto:ital,wght@1,900&display=swap');
-
 
   @keyframes fadeIn {
     from {
@@ -32,9 +29,9 @@
     transition: border-radius 0.3s; /* Transição suave de 0.3 segundos para a propriedade border-radius */
   }
   .btn-warning{
-  background-color: #ecc100;
-  color:#000;
-  text-decoration: none;
+    background-color: #ecc100;
+    color:#000;
+    text-decoration: none;
 
   }
   .btn-warning:hover{
@@ -48,36 +45,36 @@
   }
 
   
-@import url(css/login/login.css);
-:root{
-  --bg-cor:150deg,#0762d9,  #3e236b;
-  --cor-titulo: #40578c;
-  --cor-botao:   #4c66a5;
-}
+  @import url(css/login/login.css);
+  :root{
+    --bg-cor:150deg,#0762d9,  #3e236b;
+    --cor-titulo: #40578c;
+    --cor-botao:   #4c66a5;
+  }
 
-body{
-  background:linear-gradient(var(--bg-cor));
-  height: 100vh;
-  box-sizing: border-box;
- 
-}
+  body{
+    background:linear-gradient(var(--bg-cor));
+    height: 100vh;
+    box-sizing: border-box;
 
-.corpo{
-  background:linear-gradient(var(--bg-cor));
-}
+  }
 
-.corpo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff; /* Cor do texto branco */
-  font-size: 35px; /* Tamanho do texto maior */
-  padding: 5px; /* Espaçamento interno de 0px */
-  text-align: justify;
+  .corpo{
+    background:linear-gradient(var(--bg-cor));
+  }
 
-}
+  .corpo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; /* Cor do texto branco */
+    font-size: 35px; /* Tamanho do texto maior */
+    padding: 5px; /* Espaçamento interno de 0px */
+    text-align: justify;
+
+  }
 
 
 
@@ -115,7 +112,7 @@ header {
 }
 
 #intro-example.bg-image2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/img/Imagem.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/Imagem.jpg');
   background-size: 100%; /* Faz a imagem cobrir todo o elemento */
   background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
   background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -177,14 +174,14 @@ header {
 
 /* Estilo para o botão de pesquisa */
 .form-search {
-    margin-right: 5px; /* Adicione espaço à direita para separar do botão de login */
+  margin-right: 5px; /* Adicione espaço à direita para separar do botão de login */
 }
 
 /* Estilo para o botão de login */
 .form-login {
-    background-color: #007BFF; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
-    border: none; /* Remova a borda do botão */
+  background-color: #007BFF; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Remova a borda do botão */
 
 }
 .form-cadastro{
@@ -195,68 +192,68 @@ header {
 
 /* Estilo para o ícone de lupa */
 .form-icon {
-    color: #fff; /* Cor do ícone branco */
+  color: #fff; /* Cor do ícone branco */
 }
 
 .heading{
-    text-align:center;
-    font-size:32px;
-    color:white;
-    font-weight:900;
-    font-style:italic;
+  text-align:center;
+  font-size:32px;
+  color:white;
+  font-weight:900;
+  font-style:italic;
 }
 
 .cards{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left:200px;
-    margin-bottom:1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:200px;
+  margin-bottom:1rem;
 }
 
 /* Estilos para a classe "card" */
 .custom-card {
-    width: 18rem;
-    box-shadow:3px 3px 3px 3px white;
-    border-radius: 20px;
-    margin-right:2rem;
-    margin-bottom:1rem;
-    display:block;
+  width: 18rem;
+  box-shadow:3px 3px 3px 3px white;
+  border-radius: 20px;
+  margin-right:2rem;
+  margin-bottom:1rem;
+  display:block;
 }
 
 /* Estilos para a classe "custom-card-body" */
 .custom-card-body {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* Estilos para a classe "custom-card-title" */
 .custom-card-title {
-    font-size: 1.5rem;
-    margin-bottom:1rem;
-    text-align:left;
-    color:white;
+  font-size: 1.5rem;
+  margin-bottom:1rem;
+  text-align:left;
+  color:white;
 }
 
 /* Estilos para a classe "custom-card-link" */
 .custom-card-link {
-    color:white;
-    text-decoration: none;
+  color:white;
+  text-decoration: none;
 }
 
 .certificado{
-    border-radius:1rem;
-    align-items:center;
-    margin-left:60px;
-    width:100px;
+  border-radius:1rem;
+  align-items:center;
+  margin-left:60px;
+  width:100px;
 }
 
 #cardCaracteristicas{
-   background-color:white;
+ background-color:white;
 }
 
 .custom-card-text{
-    font-size:18px;
-    font-style:normal;
-    font-weight:400;
+  font-size:18px;
+  font-style:normal;
+  font-weight:400;
 }
 
 
@@ -265,8 +262,8 @@ header {
 
 
 
- /* Estilos para o rodapé */
- footer {
+/* Estilos para o rodapé */
+footer {
   background: linear-gradient(var(--bg-cor)); /* Cor de fundo do rodapé */
   color: #fff; /* Cor do texto do rodapé */
   padding: 10px 0; /* Espaçamento interno do rodapé */
@@ -451,29 +448,29 @@ p.copyright {
   }
 }
 
- /* Estilos para dispositivos com largura de tela menor que 768px (tablets e celulares) */
- @media (max-width: 768px) {
+/* Estilos para dispositivos com largura de tela menor que 768px (tablets e celulares) */
+@media (max-width: 768px) {
   body {
     background: linear-gradient(var(--bg-cor));
     height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
     box-sizing: border-box;
-}
+  }
 
-.corpo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff; /* Cor do texto branco */
-  font-size: 35px; /* Tamanho do texto maior */
-  padding: 5px; /* Espaçamento interno de 0px */
-  text-align: justify;
+  .corpo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; /* Cor do texto branco */
+    font-size: 35px; /* Tamanho do texto maior */
+    padding: 5px; /* Espaçamento interno de 0px */
+    text-align: justify;
 
-}
+  }
 
-#intro-example.bg-image2 {
-    background-image: url('/img/Imagem.jpg');
+  #intro-example.bg-image2 {
+    background-image: url('img/Imagem.jpg');
     background-size: 100%; /* Faz a imagem cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -483,8 +480,8 @@ p.copyright {
     background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
     margin-bottom: -300px;
 
-}
-.heading {
+  }
+  .heading {
     text-align: center; /* Centralizar o texto */
     font-size: 22px;
     color: white;
@@ -492,35 +489,35 @@ p.copyright {
     font-style: italic;
     margin: 20px;
 
-}
+  }
 
-.cards {
+  .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centralizar os cards horizontalmente */
     margin-left: 0; /* Remova a margem à esquerda */
     margin-right: 0; /* Remova a margem à direita */
     margin-bottom: 1rem;
-}
+  }
 
 /* Estilos para a classe "card" */
 .custom-card {
-    width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
-    box-shadow: 3px 3px 3px 3px white;
-    border-radius: 20px;
-    margin-right: 0; /* Remova a margem à direita */
-    margin-bottom: 1rem;
-    margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
-    display: block;
-    margin: 30px;
+  width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
+  box-shadow: 3px 3px 3px 3px white;
+  border-radius: 20px;
+  margin-right: 0; /* Remova a margem à direita */
+  margin-bottom: 1rem;
+  margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
+  display: block;
+  margin: 30px;
 }
 
 /* Estilos para a classe "custom-card-title" */
 .custom-card-title {
-    text-align: center; /* Centralizar o título do card */
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: white;
+  text-align: center; /* Centralizar o título do card */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 
 #cardLateral{
@@ -532,12 +529,12 @@ p.copyright {
 }
 
 
-  
+
 @media (max-width: 768px) {
   .text-white h2,
   .text-white h6 {
     font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
-}
+  }
 }
 
 /* Adicione regras de estilo para controlar o tamanho do botão em diferentes tamanhos de tela usando classes de Bootstrap */
@@ -546,7 +543,7 @@ p.copyright {
     padding: 8px 16px;
     font-size: 12px;
     min-width: 100px;
-}
+  }
 }
 
 /* Estilos para dispositivos com largura de tela menor que 768px (tablets e celulares) */
@@ -555,23 +552,23 @@ p.copyright {
     background: linear-gradient(var(--bg-cor));
     height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
     box-sizing: border-box;
-}
+  }
 
-.corpo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff; /* Cor do texto branco */
-  font-size: 35px; /* Tamanho do texto maior */
-  padding: 5px; /* Espaçamento interno de 0px */
-  text-align: justify;
+  .corpo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; /* Cor do texto branco */
+    font-size: 35px; /* Tamanho do texto maior */
+    padding: 5px; /* Espaçamento interno de 0px */
+    text-align: justify;
 
-}
+  }
 
-#intro-example.bg-image2 {
-    background-image: url('/img/Imagem.jpg');
+  #intro-example.bg-image2 {
+    background-image: url('img/Imagem.jpg');
     background-size: 100%; /* Faz a imagem cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -581,8 +578,8 @@ p.copyright {
     background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
     margin-bottom: -300px;
 
-}
-.heading {
+  }
+  .heading {
     text-align: center; /* Centralizar o texto */
     font-size: 22px;
     color: white;
@@ -590,35 +587,35 @@ p.copyright {
     font-style: italic;
     margin: 20px;
 
-}
+  }
 
-.cards {
+  .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centralizar os cards horizontalmente */
     margin-left: 0; /* Remova a margem à esquerda */
     margin-right: 0; /* Remova a margem à direita */
     margin-bottom: 1rem;
-}
+  }
 
 /* Estilos para a classe "card" */
 .custom-card {
-    width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
-    box-shadow: 3px 3px 3px 3px white;
-    border-radius: 20px;
-    margin-right: 0; /* Remova a margem à direita */
-    margin-bottom: 1rem;
-    margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
-    display: block;
-    margin: 30px;
+  width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
+  box-shadow: 3px 3px 3px 3px white;
+  border-radius: 20px;
+  margin-right: 0; /* Remova a margem à direita */
+  margin-bottom: 1rem;
+  margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
+  display: block;
+  margin: 30px;
 }
 
 /* Estilos para a classe "custom-card-title" */
 .custom-card-title {
-    text-align: center; /* Centralizar o título do card */
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: white;
+  text-align: center; /* Centralizar o título do card */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 
 #cardLateral{
@@ -634,22 +631,22 @@ p.copyright {
     background: linear-gradient(var(--bg-cor));
     height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
     box-sizing: border-box;
-}
+  }
 
-.corpo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff; /* Cor do texto branco */
-  font-size: 35px; /* Tamanho do texto maior */
-  padding: 5px; /* Espaçamento interno de 0px */
-  text-align: justify;
+  .corpo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; /* Cor do texto branco */
+    font-size: 35px; /* Tamanho do texto maior */
+    padding: 5px; /* Espaçamento interno de 0px */
+    text-align: justify;
 
-}
-#intro-example.bg-image2 {
-    background-image: url('/img/Imagem.jpg');
+  }
+  #intro-example.bg-image2 {
+    background-image: url('img/Imagem.jpg');
     background-size: 100%; /* Faz a imagem cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -659,8 +656,8 @@ p.copyright {
     background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
     margin-bottom: -100px;
 
-}
-.heading {
+  }
+  .heading {
     text-align: center; /* Centralizar o texto */
     font-size: 30px;
     color: white;
@@ -668,35 +665,35 @@ p.copyright {
     font-style: italic;
     margin: 20px;
 
-}
+  }
 
-.cards {
+  .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centralizar os cards horizontalmente */
     margin-left: 0; /* Remova a margem à esquerda */
     margin-right: 0; /* Remova a margem à direita */
     margin-bottom: 1rem;
-}
+  }
 
 /* Estilos para a classe "card" */
 .custom-card {
-    width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
-    box-shadow: 3px 3px 3px 3px white;
-    border-radius: 20px;
-    margin-right: 0; /* Remova a margem à direita */
-    margin-bottom: 1rem;
-    margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
-    display: block;
-    margin: 30px;
+  width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
+  box-shadow: 3px 3px 3px 3px white;
+  border-radius: 20px;
+  margin-right: 0; /* Remova a margem à direita */
+  margin-bottom: 1rem;
+  margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
+  display: block;
+  margin: 30px;
 }
 
 /* Estilos para a classe "custom-card-title" */
 .custom-card-title {
-    text-align: center; /* Centralizar o título do card */
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: white;
+  text-align: center; /* Centralizar o título do card */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 
 #cardLateral{
@@ -708,11 +705,11 @@ p.copyright {
 }
 
 #cardLateral{
-    color:white;
-    bottom:110px;
-    display:flex;
-    border-radius:1rem;
-    position:relative;
+  color:white;
+  bottom:110px;
+  display:flex;
+  border-radius:1rem;
+  position:relative;
 }
 
 
@@ -721,22 +718,22 @@ p.copyright {
     background: linear-gradient(var(--bg-cor));
     height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
     box-sizing: border-box;
-}
+  }
 
-.corpo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff; /* Cor do texto branco */
-  font-size: 35px; /* Tamanho do texto maior */
-  padding: 5px; /* Espaçamento interno de 0px */
-  text-align: justify;
+  .corpo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; /* Cor do texto branco */
+    font-size: 35px; /* Tamanho do texto maior */
+    padding: 5px; /* Espaçamento interno de 0px */
+    text-align: justify;
 
-}
-#intro-example.bg-image2 {
-    background-image: url('/img/Imagem.jpg');
+  }
+  #intro-example.bg-image2 {
+    background-image: url('img/Imagem.jpg');
     background-size: 100%; /* Faz a imagem cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -746,8 +743,8 @@ p.copyright {
     background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
     margin-bottom: -100px;
 
-}
-.heading {
+  }
+  .heading {
     text-align: center; /* Centralizar o texto */
     font-size: 30px;
     color: white;
@@ -755,35 +752,35 @@ p.copyright {
     font-style: italic;
     margin: 20px;
 
-}
+  }
 
-.cards {
+  .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centralizar os cards horizontalmente */
     margin-left: 0; /* Remova a margem à esquerda */
     margin-right: 0; /* Remova a margem à direita */
     margin-bottom: 1rem;
-}
+  }
 
 /* Estilos para a classe "card" */
 .custom-card {
-    width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
-    box-shadow: 3px 3px 3px 3px white;
-    border-radius: 20px;
-    margin-right: 0; /* Remova a margem à direita */
-    margin-bottom: 1rem;
-    margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
-    display: block;
-    margin: 30px;
+  width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
+  box-shadow: 3px 3px 3px 3px white;
+  border-radius: 20px;
+  margin-right: 0; /* Remova a margem à direita */
+  margin-bottom: 1rem;
+  margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
+  display: block;
+  margin: 30px;
 }
 
 /* Estilos para a classe "custom-card-title" */
 .custom-card-title {
-    text-align: center; /* Centralizar o título do card */
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: white;
+  text-align: center; /* Centralizar o título do card */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 
 #cardLateral{
@@ -795,16 +792,16 @@ p.copyright {
 }
 
 #cardLateral{
-    color:white;
-    bottom:110px;
-    display:flex;
-    border-radius:1rem;
-    position:relative;
+  color:white;
+  bottom:110px;
+  display:flex;
+  border-radius:1rem;
+  position:relative;
 }
 
 
 
-  /* Estilos para telas com no máximo 992px */
+/* Estilos para telas com no máximo 992px */
 @media (max-width: 992px) {
   body {
     padding-top: 10px;
