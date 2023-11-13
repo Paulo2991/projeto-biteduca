@@ -9,6 +9,17 @@
     }
   }
   
+  @media screen and (max-width:600px) {
+    .lista-rodape{
+      flex-direction: column;
+    }
+    footer{
+      overflow-x: hidden;
+    }
+    .rodape1{
+      overflow-x: hidden;
+    }
+  }
   .fade-in {
     animation: fadeIn 5s;
   }
