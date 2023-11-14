@@ -1,0 +1,27 @@
+
+:root{
+    --bg-cor:45deg,#0762d9,  #3e236b 80%;
+
+}
+.container-customizado{
+    height: 100vh;
+    background: linear-gradient(var(--bg-cor));
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative; 
+}
+.container-customizado::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('/img/img-cadastro.jpg') lightgray 50% / cover no-repeat; 
+    mix-blend-mode: color-dodge;
+    opacity: 0.5; 
+    pointer-events: none;
+   
+  }
+
+  

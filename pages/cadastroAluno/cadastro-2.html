@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro | Biteduca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/cadastro/style.css">
+</head>
+
+<body>
+
+
+    <main class="container-fluid container-customizado d-flex align-items-center justify-content-center ">
+        <section class="container bg-white opacity-75 container-forms">
+            <form action="" class=" ">
+                <div class="text-center mt-2 mb-5">
+                    <img src="/img/logo-preto.png" class="object-fit-contain" alt="Logo biteduca">
+                </div>
+
+                <h2 class="text-center mb-5">Dados pessoais</h2>
+
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome completo:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome aqui.">
+                </div>
+
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="cpf" class="form-label">CPF:</label>
+                        <input type="text" class="form-control" placeholder="Digite seu CPF aqui."
+                            aria-label="First name">
+                    </div>
+                    <div class="col mb-3">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="tel" class="form-control" placeholder="(00)1 1111-1111">
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col mb-3">
+                            <label for="dataNascimento" class="form-label">Data de nascimento:</label>
+                            <input type="date" class="form-control">
+                        </div>
+                            <div class="col">
+                                <label for="genero" class="form-label">Gênero</label>
+                                <select class="form-select form-select-sm col-sm-12" aria-label="Default select example">
+                                    <option value="1">Feminino</option>
+                                    <option value="2">Masculino</option>
+                                    <option value="2">Outros</option>
+                                    <option value="3">Não-binário</option>
+                                    <option value="3">Prefiro não responder</option>
+                                </select>
+                            </div>
+                    </div>
+                </div>
+                <div class="text-center mb-2">
+                    <a href="cadastro-1.html" class="btn btn-primary me-5 shadow">Voltar</a>
+                    <button type="submit" class="btn btn-primary shadow">Próximo</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
