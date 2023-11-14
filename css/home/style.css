@@ -345,7 +345,8 @@ header {
 
 /* Estilos para o logotipo */
 .logotipo {
-  margin-bottom: 20px; /* Espaçamento inferior do logotipo */
+  margin:20px;
+  align-items: center;
 }
 
 /* Estilos para o texto de copyright */
@@ -354,27 +355,14 @@ p.copyright {
 }
 
 
-
-
 @media (max-width: 360px) {
-    /* Estilos para o texto dentro da imagem */
-    .card.text-image-cabecalho h3.card-title {
-        color: #fff; /* Cor do título */
-        font-size: 8px; /* Tamanho da fonte do título */
-      }
-      
-      .card.text-image-cabecalho h6.card-text {
-        color: #fff; /* Cor do texto secundário */
-        font-size: 8px; /* Tamanho da fonte do texto secundário */
-      }
-      .card.text-image-cabecalho a.btn-responsive {
-        font-size: 8px; /* Tamanho da fonte do botão */
-        padding: 1px 8px; 
-     }
-     
-     }
 
+.logotipo img{
+  align-items: center !important; /* Adicionando !important para garantir que a regra seja aplicada */
+  width: 100% !important; /* Adicionando !important para garantir que a regra seja aplicada */
+}
 
+}
 
 /* Estilos para telas com no máximo 480px */
 
@@ -401,7 +389,7 @@ p.copyright {
 
 
 /* Estilos para telas menores que 576 pixels */
-@media (max-width: 576px) {
+@media (max-width: 580px) {
     .container-header h2,
     .container-header h3,
     .container-header h4,
@@ -410,23 +398,42 @@ p.copyright {
     }
   }
 
+ 
 
- @media (max-width: 490px) {
-/* Estilos para o texto dentro da imagem */
-.card.text-image-cabecalho h3.card-title {
-    color: #fff; /* Cor do título */
-    font-size: 10px; /* Tamanho da fonte do título */
+  @media (max-width: 350px) {
+    /* Ocultar texto dentro da imagem em telas pequenas */
+    .card.text-image-cabecalho h3.card-title,
+    .card.text-image-cabecalho h6.card-text {
+      display: none;
+    }
+  
+    /* Ajustar posição do botão */
+    .card.text-image-cabecalho a.btn-responsive {
+      font-size: 8px; /* Tamanho da fonte do botão */
+      margin-top: 30px !important; /* Adicionando !important para garantir que a regra seja aplicada */
+    }
   }
   
-  .card.text-image-cabecalho h6.card-text {
-    color: #fff; /* Cor do texto secundário */
-    font-size: 10px; /* Tamanho da fonte do texto secundário */
-  }
-  .card.text-image-cabecalho a.btn-responsive {
-    font-size: 10px; /* Tamanho da fonte do botão */
-    padding: 5px 8px; 
- }
- }
+  
+  
+  
+
+
+ @media (max-width: 580px) {
+  /* Estilos para o texto dentro da imagem */
+  .card.text-image-cabecalho h3.card-title {
+      color: #fff; /* Cor do título */
+      font-size: 10px; /* Tamanho da fonte do título */
+    }
+    
+    .card.text-image-cabecalho h6.card-text {
+      color: #fff; /* Cor do texto secundário */
+      font-size: 10px; /* Tamanho da fonte do texto secundário */
+    }
+    .card.text-image-cabecalho a.btn-responsive {
+      font-size: 10px; /* Tamanho da fonte do botão */
+   }
+   }
 /* Estilos para telas com no máximo 768px */
 @media (max-width: 768px) {
 
@@ -465,14 +472,7 @@ p.copyright {
     margin-top: 20px;
   }
 
-  /* Estilos para o rodapé */
-  footer {
-    padding: 20px;
-  }
-
-  .rodape__item-midias-sociais {
-    margin-right: 10px;
-  }
+  
 }
 
  /* Estilos para dispositivos com largura de tela menor que 768px (tablets e celulares) */
@@ -673,16 +673,8 @@ p.copyright {
     font-size: 14px;
   }
 
-  .btn-responsive {
-    margin-top: 20px;
-  }
+  
 
-  footer {
-    padding: 20px;
-  }
-
-  .rodape__item-midias-sociais {
-    margin-right: 10px;
-  }
+ 
 }
 
