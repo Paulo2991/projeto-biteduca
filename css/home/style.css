@@ -1,4 +1,7 @@
+
+
   @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Open+Sans:wght@400;700&family=Roboto:ital,wght@1,900&display=swap');
+
 
   @keyframes fadeIn {
     from {
@@ -23,10 +26,11 @@
   .fade-in {
     animation: fadeIn 5s;
   }
+  
 
   /* Estilos para o botão */
   .btn {
-    color: #ffffff; /* Cor do texto branco */
+    color: #fff; /* Cor do texto branco */
     background:linear-gradient(var(--bg-cor));
     padding: 10px 20px;
     text-align: center;
@@ -36,7 +40,6 @@
     border: none;
     cursor: pointer;
     border-radius: 5px; /* Raio inicial dos cantos do botão */
-    border-color: #fff;
     transition: border-radius 0.3s; /* Transição suave de 0.3 segundos para a propriedade border-radius */
   }
   .btn-warning{
@@ -56,36 +59,36 @@
   }
 
   
-  @import url(css/login/login.css);
-  :root{
-    --bg-cor:150deg,#0762d9,  #3e236b;
-    --cor-titulo: #40578c;
-    --cor-botao:   #4c66a5;
-  }
+@import url(css/login/login.css);
+:root{
+  --bg-cor:150deg,#0762d9,  #3e236b;
+  --cor-titulo: #40578c;
+  --cor-botao:   #4c66a5;
+}
 
-  body{
-    background:linear-gradient(var(--bg-cor));
-    height: 100vh;
-    box-sizing: border-box;
+body{
+  background:linear-gradient(var(--bg-cor));
+  height: 100vh;
+  box-sizing: border-box;
+ 
+}
 
-  }
+.corpo{
+  background:linear-gradient(var(--bg-cor));
+}
 
-  .corpo{
-    background:linear-gradient(var(--bg-cor));
-  }
+.corpo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; /* Cor do texto branco */
+  font-size: 35px; /* Tamanho do texto maior */
+  padding: 5px; /* Espaçamento interno de 0px */
+  text-align: justify;
 
-  .corpo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff; /* Cor do texto branco */
-    font-size: 35px; /* Tamanho do texto maior */
-    padding: 5px; /* Espaçamento interno de 0px */
-    text-align: justify;
-
-  }
+}
 
 
 
@@ -110,8 +113,6 @@
 .menu-item {
   font-size: 15px; /* Tamanho de fonte desejado */
   font-family: 'Roboto', sans-serif;
-
-
 }
 
 header {
@@ -123,7 +124,7 @@ header {
 }
 
 #intro-example.bg-image2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/Imagem.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/img/Imagem.jpg');
   background-size: 100%; /* Faz a imagem cobrir todo o elemento */
   background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
   background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -167,13 +168,13 @@ header {
 
 .highlight-text-bg {
   background: linear-gradient(45deg, rgba(7,98,217,0.3), rgba(62,35,107,0.3));
-  padding: 0.2rem; /* Espaçamento interno para destacar o texto */
-  border-radius: 10px; /* Borda arredondada para destacar o texto */
+  padding: 5px; /* Espaçamento interno para destacar o texto */
+  border-radius: 15px; /* Borda arredondada para destacar o texto */
 }
 
 /* Estilos para o botão responsivo */
 .btn-responsive {
-  padding: 10px 20px; /* Espaçamento interno do botão (ajuste conforme necessário) */
+  padding: 10px 20px;
   font-size: 18px; /* Tamanho da fonte (ajuste conforme necessário) */
   min-width: 10px; /* Largura mínima do botão (ajuste conforme necessário) */
   white-space: nowrap; /* Impede a quebra de texto em várias linhas */
@@ -207,18 +208,18 @@ header {
 }
 
 .heading{
-  text-align:center;
-  font-size:32px;
-  color:white;
-  font-weight:900;
-  font-style:italic;
+    text-align:center;
+    font-size:32px;
+    color:white;
+    font-weight:900;
+    font-style:italic;
 }
 
 .cards{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left:200px;
-  margin-bottom:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:200px;
+    margin-bottom:1rem;
 }
 
 /* Estilos para a classe "card" */
@@ -251,23 +252,21 @@ header {
 }
 
 .certificado{
-  border-radius:1rem;
-  align-items:center;
-  margin-left:60px;
-  width:100px;
+    border-radius:1rem;
+    align-items:center;
+    margin-left:60px;
+    width:100px;
 }
 
 #cardCaracteristicas{
- background-color:white;
+   background-color:white;
 }
 
 .custom-card-text{
-  font-size:18px;
-  font-style:normal;
-  font-weight:400;
+    font-size:18px;
+    font-style:normal;
+    font-weight:400;
 }
-
-
 
 
 
@@ -284,7 +283,9 @@ footer {
 .list-unstyled li {
   margin-right: 20px; /* Espaçamento entre os itens da lista */
   margin-bottom: 10px; /* Espaçamento inferior dos itens da lista */
+  
 }
+
 
 /* Estilos para os ícones de mídia social */
 .rodape__item-midias-sociais {
@@ -316,104 +317,80 @@ p.copyright {
 
 
 
+@media (max-width: 360px) {
+    /* Estilos para o texto dentro da imagem */
+    .card.text-image-cabecalho h3.card-title {
+        color: #fff; /* Cor do título */
+        font-size: 8px; /* Tamanho da fonte do título */
+      }
+      
+      .card.text-image-cabecalho h6.card-text {
+        color: #fff; /* Cor do texto secundário */
+        font-size: 8px; /* Tamanho da fonte do texto secundário */
+      }
+      .card.text-image-cabecalho a.btn-responsive {
+        font-size: 8px; /* Tamanho da fonte do botão */
+        padding: 1px 8px; 
+     }
+     
+     }
 
 
 
+/* Estilos para telas com no máximo 480px */
 
 
-/* Estilos para telas com no máximo 576px */
-@media (max-width: 576px) {
-  body {
-    padding-top: 10px; /* Adiciona espaçamento para centralizar o conteúdo abaixo da barra de navegação */
+@media (max-width: 480px) {
+  body{
+    overflow-x: hidden;
   }
-
-  /* Estilos para a seção de destaque */
-  #intro-example {
-    margin-top: 10px; /* Reduz a margem superior para aproximar os cards do hero */
-    padding: 20px; /* Adiciona espaçamento interno para centralizar o conteúdo */
-    text-align: justify;
-  }
-
-  .highlight-text-bg {
-    padding: 10px;
-    text-align: center; /* Centraliza o texto no destaque */
-  }
-
-  .btn-responsive {
-    width: 100%; /* Faça o botão ocupar 100% da largura */
-    margin-top: 10px;
-    font-size: 14px; /* Tamanho de fonte semelhante para todos os botões */
-  }
-
-  /* Estilos para os cards na seção principal */
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    margin-top: 10px;
-  }
-
-  .custom-card {
-    width: calc(100% - 20px); /* 100% da largura, menos o espaçamento entre os cards */
-    margin: 10px; /* Espaçamento externo entre os cards */
-    padding: 20px; /* Adiciona espaçamento interno para os cards */
-  }
-
-  /* Estilos para a seção do corpo */
-  .corpo {
-    padding: 20px;
-  }
-
-  /* Estilos para os cards na seção do corpo */
-  .custom-card-title {
-    text-align: center;
-    font-size: 18px; /* Tamanho de fonte semelhante para todos os títulos de cards */
-  }
-
-  .custom-card-text {
-    text-align: center;
-    font-size: 14px; /* Tamanho de fonte semelhante para todos os textos de cards */
-  }
-
-  .btn-responsive {
-    margin-top: 20px;
-  }
-
-  /* Estilos para o rodapé */
-  footer {
-    padding: 20px;
-  }
-
-  .rodape__item-midias-sociais {
-    margin-right: 10px;
+  footer{
+    overflow-x: hidden;
   }
 }
 
 
 
+
+@media (max-width: 600px) {
+ .lista-rodape{
+    flex-direction: column;
+
+  }
+
+}
+
+
+/* Estilos para telas menores que 576 pixels */
+@media (max-width: 576px) {
+    .container-header h2,
+    .container-header h3,
+    .container-header h4,
+    .container-header p {
+      font-size: 0.8rem; /* Ajuste o tamanho da fonte para telas menores */
+    }
+  }
+
+
+ @media (max-width: 490px) {
+/* Estilos para o texto dentro da imagem */
+.card.text-image-cabecalho h3.card-title {
+    color: #fff; /* Cor do título */
+    font-size: 10px; /* Tamanho da fonte do título */
+  }
+  
+  .card.text-image-cabecalho h6.card-text {
+    color: #fff; /* Cor do texto secundário */
+    font-size: 10px; /* Tamanho da fonte do texto secundário */
+  }
+  .card.text-image-cabecalho a.btn-responsive {
+    font-size: 10px; /* Tamanho da fonte do botão */
+    padding: 5px 8px; 
+ }
+ }
 /* Estilos para telas com no máximo 768px */
 @media (max-width: 768px) {
-  body {
-    padding-top: 10px; /* Adiciona espaçamento para centralizar o conteúdo abaixo da barra de navegação */
-  }
 
-  /* Estilos para a seção de destaque */
-  #intro-example {
-    margin-top: 10px; /* Reduz a margem superior para aproximar os cards do hero */
-    padding: 20px; /* Adiciona espaçamento interno para centralizar o conteúdo */
-    text-align: justify;
-  }
-
-  .highlight-text-bg {
-    padding: 10px;
-    text-align: center; /* Centraliza o texto no destaque */
-  }
-
-  .btn-responsive {
-    width: 100%; /* Faça o botão ocupar 100% da largura */
-    margin-top: 10px;
-    font-size: 14px; /* Tamanho de fonte semelhante para todos os botões */
-  }
 
   /* Estilos para os cards na seção principal */
   .cards {
@@ -459,29 +436,29 @@ p.copyright {
   }
 }
 
-/* Estilos para dispositivos com largura de tela menor que 768px (tablets e celulares) */
-@media (max-width: 768px) {
+ /* Estilos para dispositivos com largura de tela menor que 768px (tablets e celulares) */
+ @media (max-width: 768px) {
   body {
     background: linear-gradient(var(--bg-cor));
     height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
     box-sizing: border-box;
-  }
+}
 
-  .corpo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff; /* Cor do texto branco */
-    font-size: 35px; /* Tamanho do texto maior */
-    padding: 5px; /* Espaçamento interno de 0px */
-    text-align: justify;
+.corpo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; /* Cor do texto branco */
+  font-size: 35px; /* Tamanho do texto maior */
+  padding: 5px; /* Espaçamento interno de 0px */
+  text-align: justify;
 
-  }
+}
 
-  #intro-example.bg-image2 {
-    background-image: url('img/Imagem.jpg');
+#intro-example.bg-image2 {
+    background-image: url('/img/Imagem.jpg');
     background-size: 100%; /* Faz a imagem cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -491,8 +468,8 @@ p.copyright {
     background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
     margin-bottom: -300px;
 
-  }
-  .heading {
+}
+.heading {
     text-align: center; /* Centralizar o texto */
     font-size: 22px;
     color: white;
@@ -500,7 +477,7 @@ p.copyright {
     font-style: italic;
     margin: 20px;
 
-  }
+}
 
   .cards {
     display: flex;
@@ -548,7 +525,7 @@ p.copyright {
   }
 }
 
-/* Adicione regras de estilo para controlar o tamanho do botão em diferentes tamanhos de tela usando classes de Bootstrap */
+/* Adicione regras de estilo para controlar o tamanho do botão em diferentes tamanhos de tela */
 @media (max-width: 767px) {
   .btn-responsive {
     padding: 8px 16px;
@@ -563,23 +540,23 @@ p.copyright {
     background: linear-gradient(var(--bg-cor));
     height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
     box-sizing: border-box;
-  }
+}
 
-  .corpo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff; /* Cor do texto branco */
-    font-size: 35px; /* Tamanho do texto maior */
-    padding: 5px; /* Espaçamento interno de 0px */
-    text-align: justify;
+.corpo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; /* Cor do texto branco */
+  font-size: 35px; /* Tamanho do texto maior */
+  padding: 5px; /* Espaçamento interno de 0px */
+  text-align: justify;
 
-  }
+}
 
-  #intro-example.bg-image2 {
-    background-image: url('img/Imagem.jpg');
+#intro-example.bg-image2 {
+    background-image: url('/img/Imagem.jpg');
     background-size: 100%; /* Faz a imagem cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -589,8 +566,8 @@ p.copyright {
     background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
     margin-bottom: -300px;
 
-  }
-  .heading {
+}
+.heading {
     text-align: center; /* Centralizar o texto */
     font-size: 22px;
     color: white;
@@ -598,7 +575,7 @@ p.copyright {
     font-style: italic;
     margin: 20px;
 
-  }
+}
 
   .cards {
     display: flex;
@@ -642,22 +619,22 @@ p.copyright {
     background: linear-gradient(var(--bg-cor));
     height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
     box-sizing: border-box;
-  }
+}
 
-  .corpo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff; /* Cor do texto branco */
-    font-size: 35px; /* Tamanho do texto maior */
-    padding: 5px; /* Espaçamento interno de 0px */
-    text-align: justify;
+.corpo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; /* Cor do texto branco */
+  font-size: 35px; /* Tamanho do texto maior */
+  padding: 5px; /* Espaçamento interno de 0px */
+  text-align: justify;
 
-  }
-  #intro-example.bg-image2 {
-    background-image: url('img/Imagem.jpg');
+}
+#intro-example.bg-image2 {
+    background-image: url('/img/Imagem.jpg');
     background-size: 100%; /* Faz a imagem cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -667,8 +644,8 @@ p.copyright {
     background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
     margin-bottom: -100px;
 
-  }
-  .heading {
+}
+.heading {
     text-align: center; /* Centralizar o texto */
     font-size: 30px;
     color: white;
@@ -676,7 +653,94 @@ p.copyright {
     font-style: italic;
     margin: 20px;
 
-  }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralizar os cards horizontalmente */
+    margin-left: 0; /* Remova a margem à esquerda */
+    margin-right: 0; /* Remova a margem à direita */
+    margin-bottom: 1rem;
+}
+
+/* Estilos para a classe "card" */
+.custom-card {
+    width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
+    box-shadow: 3px 3px 3px 3px white;
+    border-radius: 20px;
+    margin-right: 0; /* Remova a margem à direita */
+    margin-bottom: 1rem;
+    margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
+    display: block;
+    margin: 30px;
+}
+
+/* Estilos para a classe "custom-card-title" */
+.custom-card-title {
+    text-align: center; /* Centralizar o título do card */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+#cardLateral{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:100px;
+}
+
+}
+
+#cardLateral{
+    color:white;
+    bottom:110px;
+    display:flex;
+    border-radius:1rem;
+    position:relative;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background: linear-gradient(var(--bg-cor));
+    height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
+    box-sizing: border-box;
+}
+
+.corpo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/Imagem.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; /* Cor do texto branco */
+  font-size: 35px; /* Tamanho do texto maior */
+  padding: 5px; /* Espaçamento interno de 0px */
+  text-align: justify;
+
+}
+#intro-example.bg-image2 {
+    background-image: url('/img/Imagem.jpg');
+    background-size: 100%; /* Faz a imagem cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 100vh; /* Define a altura para 100% da viewport height */
+    width: 100%; /* Define a largura para 100% da viewport width */
+    max-width: 100%; /* Garante a responsividade em telas menores */
+    background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
+    margin-bottom: -100px;
+
+}
+.heading {
+    text-align: center; /* Centralizar o texto */
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    margin: 20px;
+
+}
 
   .cards {
     display: flex;
@@ -724,91 +788,6 @@ p.copyright {
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    background: linear-gradient(var(--bg-cor));
-    height: auto; /* Remova a altura fixa para ajustar automaticamente ao conteúdo */
-    box-sizing: border-box;
-  }
-
-  .corpo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/Imagem.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff; /* Cor do texto branco */
-    font-size: 35px; /* Tamanho do texto maior */
-    padding: 5px; /* Espaçamento interno de 0px */
-    text-align: justify;
-
-  }
-  #intro-example.bg-image2 {
-    background-image: url('img/Imagem.jpg');
-    background-size: 100%; /* Faz a imagem cobrir todo o elemento */
-    background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    height: 100vh; /* Define a altura para 100% da viewport height */
-    width: 100%; /* Define a largura para 100% da viewport width */
-    max-width: 100%; /* Garante a responsividade em telas menores */
-    background-position-y: 0%; /* Ajuste a porcentagem para controlar o movimento vertical */
-    margin-bottom: -100px;
-
-  }
-  .heading {
-    text-align: center; /* Centralizar o texto */
-    font-size: 30px;
-    color: white;
-    font-weight: 600;
-    font-style: italic;
-    margin: 20px;
-
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centralizar os cards horizontalmente */
-    margin-left: 0; /* Remova a margem à esquerda */
-    margin-right: 0; /* Remova a margem à direita */
-    margin-bottom: 1rem;
-  }
-
-/* Estilos para a classe "card" */
-.custom-card {
-  width: 100%; /* Faça com que os cards ocupem 100% da largura da tela */
-  box-shadow: 3px 3px 3px 3px white;
-  border-radius: 20px;
-  margin-right: 0; /* Remova a margem à direita */
-  margin-bottom: 1rem;
-  margin-top: 30px; /* Adicione um espaçamento superior para levantar os cards */
-  display: block;
-  margin: 30px;
-}
-
-/* Estilos para a classe "custom-card-title" */
-.custom-card-title {
-  text-align: center; /* Centralizar o título do card */
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-#cardLateral{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top:100px;
-}
-
-}
-
-#cardLateral{
-  color:white;
-  bottom:110px;
-  display:flex;
-  border-radius:1rem;
-  position:relative;
-}
 
 
 
@@ -818,32 +797,14 @@ p.copyright {
     padding-top: 10px;
   }
 
-  #intro-example {
-    margin-top: 10px;
-    padding: 20px;
-    text-align: justify;
-  }
+ 
 
-  .highlight-text-bg {
-    padding: 10px;
-    text-align: center;
-  }
+ 
 
-  .btn-responsive {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 14px;
-  }
 
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-  }
 
   .custom-card {
-    width: calc(50% - 20px); /* Dois cards por linha, com espaçamento entre eles */
+    width: calc(100% - 20px); 
     margin: 10px;
     padding: 20px;
   }
