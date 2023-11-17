@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon1.png">
 
   <link rel="stylesheet" href="css/home/style.css">
+  <link rel="stylesheet" href="css/home/footer.css">
+  <link rel="stylesheet" href="css/header.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +34,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link menu-item" href="index.html">Home</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                Cursos
@@ -45,7 +50,7 @@
               <a class="nav-link menu-item" href="#">Formações</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link menu-item" href="#">Sobre</a>
+              <a class="nav-link menu-item" href="sobre_nos.html">Sobre</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menu-item" href="#">Trilha</a>
@@ -55,29 +60,55 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control form-control-sm me-2" type="search" placeholder="Cursos" aria-label="Cursos">
+            <input class="form-control form-control-sm me-2" type="search" placeholder="Cursos" aria-label="Cursos" id="searchInput">
             <div class="btn-group" role="group">
-              <button class="btn btn-primary btn-sm form-search" type="submit">
+              <button class="btn btn-primary btn-sm form-search" type="button" id="toggleSearch">
                 <i class="fas fa-search form-icon"></i> <!-- Ícone de lupa corrigido -->
               </button>
               <a href="/pages/cadastroAluno/cadastro-1.html" class="btn btn-primary btn-sm form-cadastro">Cadastre</a>
               <a href="/pages/login.html" class="btn btn-primary btn-sm form-login ml-2">Login</a>
             </div>
           </form>
-          </header>
+        </header>
       
-      <div class="card text-bg-dark text-image-cabecalho">
-        <img src="/img/Imagem.jpg" class="img-fluid fade-in" alt="...">
-        <div class="card-img-overlay h-100%">
-          <div class="mask highlight-text-bg fade-in text-image-cabecalho d-flex flex-column align-items-center justify-content-center">
-            <h3 class="card-title text-image-cabecalho" style="margin-top: 82px;">Os cursos mais procurados do mercado</h3>
-            <h6 class="card-text text-image-cabecalho" style="margin-bottom: 10px;">Invista em seu crescimento profissional e destaque-se em sua área.</h6>
-            <a class="btn-warning align-items-center m-2 btn-responsive fade-in" href="https://web.whatsapp.com/" role="button" rel="nofollow" target="_blank">
-              <strong>Quero fazer minha inscrição</strong>
-            </a>
+     
+        <div class="card text-bg-dark text-image-cabecalho">
+          <img src="img/Imagem.jpg" class="img-fluid fade-in" alt="...">
+          <div class="card-img-overlay h-100%">
+              <div class="mask highlight-text-bg fade-in text-image-cabecalho d-flex flex-column align-items-center justify-content-center">
+                  <h3 class="card-title text-image-cabecalho" style="margin-top: 82px;">
+                      <span class="text-anim"></span>
+                  </h3>
+                  <h6 class="card-text text-image-cabecalho" style="margin-bottom: 10px;">
+                      <span class="text-anim"></span>
+                  </h6>
+                  <a class="btn-warning align-items-center m-2 btn-responsive fade-in" href="https://web.whatsapp.com/" role="button" rel="nofollow" target="_blank">
+                      <strong>Quero fazer minha inscrição</strong>
+                  </a>
+              </div>
           </div>
-        </div>
       </div>
+  
+      <script>
+          function typeText(selector, text, speed) {
+              var index = 0;
+              var interval = setInterval(function () {
+                  $(selector).find('.text-anim').text(text.substring(0, index));
+                  index++;
+                  if (index > text.length) {
+                      clearInterval(interval);
+                      setTimeout(function () {
+                          index = 0;
+                          typeText(selector, text, speed);
+                      }, 5000); // Aguarde 5 segundo antes de reiniciar a animação
+                  }
+              }, speed);
+          }
+  
+          // Chame a função para cada frase que deseja animar
+          typeText('.card-title', 'Os cursos mais procurados do mercado', 100);
+          typeText('.card-text', 'Invista em seu crescimento profissional e destaque-se em sua área.', 50);
+      </script>
       
 
 
@@ -92,7 +123,7 @@
           <h3 style="margin-bottom: 20px;">Conheça mais opções de cursos a distância</h3></div>
           <div class="row">
                 <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
+                  <div class="card  card-home mb-4 shadow-sm">
                     <div class="card-body text-center">
                       <img src="/img/certificado.png" class="icone-link" alt="">     
                       <h4><strong>Curso Com Certificado</strong></h4>
@@ -104,7 +135,7 @@
                 </div>
                 
                 <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
+                  <div class="card  card-home mb-4 shadow-sm">
                     <div class="card-body text-center">
                       <img src="/img/certificado.png" class="icone-link" alt="">     
                       <h4><strong>Curso Com Certificado</strong></h4>
@@ -115,7 +146,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
+                  <div class="card card-home mb-4 shadow-sm">
                     <div class="card-body text-center">
                       <img src="/img/certificado.png" class="icone-link" alt="">     
                       <h4><strong>Curso Com Certificado</strong></h4>
@@ -126,7 +157,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
+                  <div class="card card-home mb-4 shadow-sm">
                     <div class="card-body text-center">
                       <img src="/img/certificado.png" class="icone-link" alt="">     
                       <h4><strong>Curso Com Certificado</strong></h4>
@@ -137,7 +168,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
+                  <div class="card card-home mb-4 shadow-sm">
                     <div class="card-body text-center">
                       <img src="/img/certificado.png" class="icone-link" alt="">     
                       <h4><strong>Curso Com Certificado</strong></h4>
@@ -148,7 +179,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
+                  <div class="card card-home mb-4 shadow-sm">
                     <div class="card-body text-center">
                       <img src="/img/certificado.png" class="icone-link" alt="">     
                       <h4><strong>Curso Com Certificado</strong></h4>
@@ -271,11 +302,11 @@
   <div class="container py-3">
     <div class="text-center mb-4 p-4">
       <ol class="list-unstyled lista-rodape d-flex justify-content-center">
-        <li class="mb-3" style="margin-right: 20px;">Termo e Avaliações</li>
-        <li class="mb-3" style="margin-right: 20px;">Política de Privacidade</li>
-        <li class="mb-3" style="margin-right: 20px;">Contato</li>
-        <li class="mb-3" style="margin-right: 20px;">Atendimento por WhatsApp</li>
-        <li class="mb-3" style="margin-right: 10px;">FAQ (Perguntas Frequentes)</li>
+        <li class="mb-2" style="margin-right: 20px;">Termo e Avaliações</li>
+        <li class="mb-2" style="margin-right: 20px;">Política de Privacidade</li>
+        <li class="mb-2" style="margin-right: 20px;">Contato</li>
+        <li class="mb-2" style="margin-right: 20px;">Atendimento por WhatsApp</li>
+        <li class="mb-2" style="margin-right: 10px;">FAQ (Perguntas Frequentes)</li>
       </ol>
 
       <p class="mt-4">Curso Online Ltda - Todos os direitos reservados<br>CNPJ: 00.000.000./0000-00 Avenida 348 1306, Vila- Leopoldina - São Paulo SP</p>
@@ -317,6 +348,15 @@
     </div>
   </div>
 </footer>
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script>
+     $(document).ready(function() {
+     $("#toggleSearch").click(function() {
+      $("#searchInput").toggleClass("hidden");
+    });
+  });
+  </script>
 
         
      

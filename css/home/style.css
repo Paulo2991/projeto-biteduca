@@ -98,6 +98,8 @@ body{
   font-size: 35px; /* Tamanho do texto maior */
   padding: 5px; /* Espaçamento interno de 0px */
   text-align: justify;
+  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
+  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
 
 }
 
@@ -106,8 +108,8 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh; /* Altura igual à altura da tela */
-  display: flex;
+  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
+  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -123,11 +125,12 @@ body{
 
 
 .parallax-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/imagem9.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/cursos.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: auto; 
+  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,46 +142,73 @@ body{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Estilo para o link do menu */
-.navbar-nav .nav-item .nav-link {
-  color: #000; /* Cor padrão do texto */
-  transition: color 0.3s; /* Efeito de transição suave na cor */
+.parallax-time {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/img/equipebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
+  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Cor do texto */
+  text-shadow: 2px 1px 1px #000; /* Cor e tamanho do contorno */
+  font-weight: bold;
 }
 
-/* Estilo para o bloco azul ao passar o mouse sobre o menu */
-.navbar-nav .nav-item:hover {
-  background-color: #0762d9; /* Cor de fundo azul durante o hover */
-  border-radius: 10px; /* Borda arredondada */
+.parallax-sobre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('/img/img_lampada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
+  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.parallax-time h2 {
+  margin-bottom: 2rem; /* Ajuste de margem inferior para o cabeçalho */
+}
+
+.team-member {
+  margin-bottom: 30px; /* Espaçamento entre membros da equipe */
+}
+
+.team-member img {
+  width: 100%; /* Ajuste a largura da imagem para ocupar 100% do contêiner pai */
+}
+
+.social-icons {
+  margin-top: 20px; /* Espaçamento superior para ícones sociais */
+}
+
+/* Adicione regras de mídia para ajustar estilos em tamanhos de tela menores */
+@media (max-width: 768px) {
+  .parallax-time {
+      padding: 30px 0; /* Reduza o preenchimento em telas menores */
+  }
+
+  .team-member {
+      margin-bottom: 20px; /* Reduza o espaçamento entre membros da equipe em telas menores */
+  }
+}
+
+/* Adicione regras de mídia para ajustar estilos em tamanhos de tela menores */
+@media (max-width: 768px) {
+  .parallax-section{
+      padding: 30px 0; /* Reduza o preenchimento em telas menores */
+      height: auto;
+  }
+
 
 }
 
-/* Estilo para o link do menu no hover */
-.navbar-nav .nav-item .nav-link:hover {
-  color: #fff; /* Cor branca durante o hover */
-}
 
-.menu-item {
-  font-size: 15px; /* Tamanho de fonte desejado */
-  font-family: 'Roboto', sans-serif;
-}
-
-header {
-  position: relative;
-}
-
-.navbar {
-  z-index: 1; /* Coloca o menu sobre a imagem */
-}
 
 
 
@@ -194,40 +224,10 @@ header {
   border-radius: 15px; /* Borda arredondada para destacar o texto */
 }
 
-/* Estilos para o botão responsivo */
-.btn-responsive {
-  padding: 10px 20px;
-  font-size: 18px; /* Tamanho da fonte (ajuste conforme necessário) */
-  min-width: 10px; /* Largura mínima do botão (ajuste conforme necessário) */
-  white-space: nowrap; /* Impede a quebra de texto em várias linhas */
-  border-radius: 20px;
-
-}
 
 
 
-/* Estilo para o botão de pesquisa */
-.form-search {
-    margin-right: 5px; /* Adicione espaço à direita para separar do botão de login */
-}
 
-/* Estilo para o botão de login */
-.form-login {
-    background-color: #007BFF; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
-    border: none; /* Remova a borda do botão */
-
-}
-.form-cadastro{
-  margin-right: 5px; /* Adiciona espaço à direita para separar do botão de login */
-
-
-}
-
-/* Estilo para o ícone de lupa */
-.form-icon {
-    color: #fff; /* Cor do ícone branco */
-}
 
 
 
@@ -240,7 +240,7 @@ header {
     margin-bottom:30px;
   
   }
-  .card {
+  .card-home {
     border-radius: 20px;
     border: 1px solid white; /* Adiciona uma borda branca */
     box-shadow:3px 3px 3px 3px white;
@@ -308,61 +308,62 @@ header {
 }
 
 
+/* Sobre Nós */
 
-
-
- /* Estilos para o rodapé */
- footer {
-  background: linear-gradient(var(--bg-cor)); /* Cor de fundo do rodapé */
-  color: #fff; /* Cor do texto do rodapé */
-  padding: 10px 0; /* Espaçamento interno do rodapé */
+.text-anim {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
 }
 
-/* Estilos para a lista de links no rodapé */
-.list-unstyled li {
-  margin-right: 20px; /* Espaçamento entre os itens da lista */
-  margin-bottom: 10px; /* Espaçamento inferior dos itens da lista */
-  
+.highlight {
+  background: linear-gradient(var(--bg-cor)); 
+  padding: 0 5px; /* Adicione espaçamento interno para melhorar o destaque */
 }
 
-
-/* Estilos para os ícones de mídia social */
-.rodape__item-midias-sociais {
-  margin-right: 20px; /* Espaçamento entre os ícones de mídia social */
-  margin-bottom: 10px; /* Espaçamento inferior dos ícones de mídia social */
+.card-sobre{
+  border-radius: 20px;
+  border: 1px solid #000; /* Adiciona uma borda branca */
+  box-shadow:3px 3px 3px 3px #000;
+  border-radius: 20px;
+  color: #000;
 }
 
-/* Estilos para os ícones de mídia social com hover */
-.rodape__item-midias-sociais i {
-  font-size: 30px;
-  color: #fff;
-  transition: transform 0.2s;
-}
-
-.rodape__item-midias-sociais i:hover {
-  transform: scale(1.5);
-}
-
-/* Estilos para o logotipo */
-.logotipo {
-  margin:20px;
+.card-text{
+  text-align: justify;
   align-items: center;
 }
 
-/* Estilos para o texto de copyright */
-p.copyright {
-  margin: 0; /* Remova qualquer espaçamento inferior do texto de copyright */
+
+/* Estilização para o ícone Missão */
+.card-body i.fas.fa-record-vinyl {
+  font-size: 2rem; /* Tamanho do ícone */
+  color: #ecc100; /* Cor do texto*/
+}
+
+/* Estilização para o ícone Visão */
+.card-body i.far.fa-eye{
+  font-size: 2rem; /* Tamanho do ícone */
+  color: #ecc100; /* Cor do texto*/
+}
+/* Estilização para o ícone Valores */
+.card-body i.fas.fa-star{
+  font-size: 2rem; /* Tamanho do ícone */
+  color: #ecc100; /* Cor do texto*/
+}
+
+.text-white {
+  color: white;
 }
 
 
-@media (max-width: 360px) {
 
-.logotipo img{
-  align-items: center !important; /* Adicionando !important para garantir que a regra seja aplicada */
-  width: 100% !important; /* Adicionando !important para garantir que a regra seja aplicada */
-}
 
-}
+
+
+
+ 
 
 /* Estilos para telas com no máximo 480px */
 
@@ -637,6 +638,11 @@ p.copyright {
     position:relative;
 }
 
+
+.btn-white {
+  background-color: white;
+  color: black; /* Text color */
+}
 
 
 
