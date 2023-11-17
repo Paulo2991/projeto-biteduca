@@ -8,6 +8,7 @@
     background: linear-gradient(var(--bg-cor));
     box-sizing: border-box;
     overflow-x: hidden;
+    overflow-y:  visible !important;
     position: relative; 
 }
 .container-customizado::before {
@@ -21,7 +22,12 @@
     mix-blend-mode: color-dodge;
     opacity: 0.5; 
     pointer-events: none;
-   
   }
 
-  
+  .preco-card{
+    font-size: 2rem;
+  }
+
+  .metodo-pagamento-item:hover{
+    border-bottom:4px solid #0762d9;
+  }
