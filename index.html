@@ -10,16 +10,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon1.png">
 
   <link rel="stylesheet" href="css/home/style.css">
+<<<<<<< HEAD
+=======
   <link rel="stylesheet" href="css/home/footer.css">
   <link rel="stylesheet" href="css/home/header.css">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> e944024 (pagina sobre e trilha realizadas)
+>>>>>>> ac4852d58079aafe7d1a1d475cdd1e8a23cc3e94
+>>>>>>> 5aa7dc8445cdc7630532799da3e4664a818c580e
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Open+Sans:wght@400;700&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
- 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Open+Sans:wght@400;700&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
@@ -34,12 +43,40 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link menu-item" href="index.html">Home</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                Cursos
+<<<<<<< HEAD
+             </a>
+             <ul class="dropdown-menu menu-item" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item active" >Todos os Cursos</a></li>
+              <li><a class="dropdown-item" href="curso_gratuito.html">Curso Gratuito</a></li>
+              <li><a class="dropdown-item" href="pages/cadastrarcurso.html">Cadastrar Curso</a></li>
+              <li><a class="dropdown-item" href="pages/informacoescurso.html">Informações Curso</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-item" href="#">Formações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-item" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-item" href="#">Trilha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-item" href="#">Como funciona</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Cursos" aria-label="Cursos">
+          <div class="btn-group" role="group">
+            <button class="btn btn-primary btn-sm form-search" type="submit">
+              <i class="fas fa-search form-icon"></i> <!-- Ícone de lupa corrigido -->
+            </button>
+            <a href="../pages/cadastroAluno/cadastro-1.html" class="btn btn-primary btn-sm form-cadastro">Cadastre</a>
+            <a href="../pages/login.html" class="btn btn-primary btn-sm form-login ml-2">Login</a>
+=======
               </a>
               <ul class="dropdown-menu menu-item" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item active" >Todos os Cursos</a></li>
@@ -86,209 +123,335 @@
                       <strong>Quero fazer minha inscrição</strong>
                   </a>
               </div>
+>>>>>>> e944024 (pagina sobre e trilha realizadas)
           </div>
+        </form>
+      </header>
+      
+      <div class="card text-bg-dark text-image-cabecalho">
+        <img src="img/Imagem.jpg" class="img-fluid fade-in" alt="...">
+        <div class="card-img-overlay h-100%">
+          <div class="mask highlight-text-bg fade-in text-image-cabecalho d-flex flex-column align-items-center justify-content-center">
+            <h3 class="card-title text-image-cabecalho" style="margin-top: 82px;">Os cursos mais procurados do mercado</h3>
+            <h6 class="card-text text-image-cabecalho" style="margin-bottom: 10px;">Invista em seu crescimento profissional e destaque-se em sua área.</h6>
+            <a class="btn-warning align-items-center m-2 btn-responsive fade-in" href="https://web.whatsapp.com/" role="button" rel="nofollow" target="_blank">
+              <strong>Quero fazer minha inscrição</strong>
+            </a>
+          </div>
+        </div>
       </div>
-  
-      <script>
-          function typeText(selector, text, speed) {
-              var index = 0;
-              var interval = setInterval(function () {
-                  $(selector).find('.text-anim').text(text.substring(0, index));
-                  index++;
-                  if (index > text.length) {
-                      clearInterval(interval);
-                      setTimeout(function () {
-                          index = 0;
-                          typeText(selector, text, speed);
-                      }, 5000); // Aguarde 5 segundo antes de reiniciar a animação
-                  }
-              }, speed);
-          }
-  
-          // Chame a função para cada frase que deseja animar
-          typeText('.card-title', 'Os cursos mais procurados do mercado', 100);
-          typeText('.card-text', 'Invista em seu crescimento profissional e destaque-se em sua área.', 50);
-      </script>
       
 
 
-       <!-- Background image -->
+      <!-- Background image -->
 
-       
-        
-  
-          
+
+
+
+
       <div class="container text-center container-header">
         <div class="header"><h2><strong>O que você quer aprender hoje?</strong></h2>
           <h3 style="margin-bottom: 20px;">Conheça mais opções de cursos a distância</h3></div>
           <div class="row">
-                <div class="col-md-4">
-                  <div class="card  card-home mb-4 shadow-sm">
-                    <div class="card-body text-center">
-                      <img src="/img/certificado.png" class="icone-link" alt="">     
-                      <h4><strong>Curso Com Certificado</strong></h4>
-                      <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body text-center">
+                  <img src="img/certificado.png" class="icone-link" alt="">     
+                  <h4><strong>Curso Com Certificado</strong></h4>
+                  <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
+                  <div class="d-flex justify-content-between align-items-center">
                   </div>
                 </div>
-                
-                <div class="col-md-4">
-                  <div class="card  card-home mb-4 shadow-sm">
-                    <div class="card-body text-center">
-                      <img src="/img/certificado.png" class="icone-link" alt="">     
-                      <h4><strong>Curso Com Certificado</strong></h4>
-                      <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card card-home mb-4 shadow-sm">
-                    <div class="card-body text-center">
-                      <img src="/img/certificado.png" class="icone-link" alt="">     
-                      <h4><strong>Curso Com Certificado</strong></h4>
-                      <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card card-home mb-4 shadow-sm">
-                    <div class="card-body text-center">
-                      <img src="/img/certificado.png" class="icone-link" alt="">     
-                      <h4><strong>Curso Com Certificado</strong></h4>
-                      <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card card-home mb-4 shadow-sm">
-                    <div class="card-body text-center">
-                      <img src="/img/certificado.png" class="icone-link" alt="">     
-                      <h4><strong>Curso Com Certificado</strong></h4>
-                      <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card card-home mb-4 shadow-sm">
-                    <div class="card-body text-center">
-                      <img src="/img/certificado.png" class="icone-link" alt="">     
-                      <h4><strong>Curso Com Certificado</strong></h4>
-                      <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              </div>
             </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body text-center">
+                  <img src="img/certificado.png" class="icone-link" alt="">     
+                  <h4><strong>Curso Com Certificado</strong></h4>
+                  <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body text-center">
+                  <img src="img/certificado.png" class="icone-link" alt="">     
+                  <h4><strong>Curso Com Certificado</strong></h4>
+                  <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body text-center">
+                  <img src="img/certificado.png" class="icone-link" alt="">     
+                  <h4><strong>Curso Com Certificado</strong></h4>
+                  <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body text-center">
+                  <img src="img/certificado.png" class="icone-link" alt="">     
+                  <h4><strong>Curso Com Certificado</strong></h4>
+                  <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body text-center">
+                  <img src="img/certificado.png" class="icone-link" alt="">     
+                  <h4><strong>Curso Com Certificado</strong></h4>
+                  <p class="card-text">Clique aqui e saiba mais sobre os cursos</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-      <section class="corpo">
-        <div class="cards">
-          <div class="custom-card">
-            <div class="custom-card-body">
-              <h5 class="custom-card-title">A Excelência acadêmica </h5>
-              <hr>
-              <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
+        <section class="corpo">
+          <div class="cards">
+            <div class="custom-card">
+              <div class="custom-card-body">
+                <h5 class="custom-card-title">A Excelência acadêmica </h5>
+                <hr>
+                <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
+              </div>
+            </div>
+            <div class="custom-card">
+              <div class="custom-card-body">
+                <h5 class="custom-card-title">Gerenciamento On-line</h5>
+                <hr>
+                <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
+              </div>
             </div>
           </div>
-          <div class="custom-card">
-            <div class="custom-card-body">
-              <h5 class="custom-card-title">Gerenciamento On-line</h5>
-              <hr>
-              <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
+          <div class="cards">
+            <div class="custom-card">
+              <div class="custom-card-body">
+                <h5 class="custom-card-title">Os Caminhos da Carreira</h5>
+                <hr>
+                <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="custom-card">
-            <div class="custom-card-body">
-              <h5 class="custom-card-title">Os Caminhos da Carreira</h5>
-              <hr>
-              <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
+            <div class="custom-card">
+              <div class="custom-card-body">
+                <h5 class="custom-card-title">Modern Careers</h5>
+                <hr>
+                <p class="custom-card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
+              </div>
             </div>
-          </div>
-          <div class="custom-card">
-            <div class="custom-card-body">
-              <h5 class="custom-card-title">Modern Careers</h5>
-              <hr>
-              <p class="custom-card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.</p>
-            </div>
-          </div>
-          <div class="custom-card">
-            <div class="custom-card-body">
-              <h5 class="custom-card-title">Escola Características </h5>
-              <hr>
-              <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur. 
-              </p>
-              <button class="btn-warning align-items-center m-2 btn-responsive" role="button" rel="nofollow"  type="button"><strong>VEJA MAIS</strong></button>
-            </div>
-          </div> 
-          
+            <div class="custom-card">
+              <div class="custom-card-body">
+                <h5 class="custom-card-title">Escola Características </h5>
+                <hr>
+                <p class="custom-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sed dicta illo, tempore aliquid perspiciatis odit ullam id. Similique, sequi veritatis reprehenderit reiciendis corrupti ad hic dolorem ab rerum aspernatur. 
+                </p>
+                <button class="btn-warning align-items-center m-2 btn-responsive" role="button" rel="nofollow"  type="button"><strong>VEJA MAIS</strong></button>
+              </div>
+            </div> 
+
           </div>
         </div>
       </section>
-      <section>
+      <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+       <h1 class="h1 text-center">Lives</h1>
+       <h2 class="h2 text-center">CONFIRA NOSSSAS LIFES</h2>
+       <h3 class="h3 text-center">Ver lifes gravadas anteriores</h3>
+       <button class="btn btn-lg align-items-center m-2">
+         Ver Lives
+       </button>
+       <div class="row d-flex justify-content-between">
+        <div class="col">
+          <div class="card">
+            <img src="img/imagemcertificado.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/imagemcertificado.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/imagemcertificado.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
       <div class="parallax-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-left">
-                    <h3 class="mb-3 text-siga">Siga-nos nas Redes Sociais</h3>
-                    <h4 class="text-conteudo">Conteúdo Exclusivo & Atualizações</h4>
-                </div>
-              <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-left">
+              <h3 class="mb-3 text-siga">Siga-nos nas Redes Sociais</h3>
+              <h4 class="text-conteudo">Conteúdo Exclusivo & Atualizações</h4>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+              <ul class="list-unstyled d-flex" style="margin: 0; padding: 0;">
+                <li class="rodape__item-midias-sociais mb-4 mr-4">
+                  <a href="https://www.facebook.com" class="icone-midia-social">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li class="rodape__item-midias-sociais mb-4 mr-4">
+                  <a href="https://www.instagram.com" class=" icone-midia-social">
+                    <i class="fab fa-instagram-square"></i>
+                  </a>
+                </li>
+                <li class="rodape__item-midias-sociais mb-4 mr-4">
+                  <a href="https://www.linkedin.com/in/rduartedelima/" class="icone-midia-social">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="rodape__item-midias-sociais mb-4 mr-4">
+                  <a href="https://www.youtube.com/channel/UC5TvpjArLEoJnn5V5fG9chQ" class=" icone-midia-social">
+                    <i class="fab fa-youtube-square"></i>
+                  </a>
+                </li>
+                <li class="rodape__item-midias-sociais mb-4">
+                  <a href="https://api.whatsapp.com/send?phone=5511941616806" class=" icone-midia-social">
+                    <i class="fab fa-whatsapp-square"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <div class="parallax-section">
+      <div class="container mt-5 mb-4 parallax-content">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-left">
+            <h3 class="mb-3">CURSO GRATUITO</h3>
+            <h4 >Full Stack Duração 4 Meses</h4>
+            <p>Venha conhecer nosso curso</p>
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <a href="" class="btn btn-primary btn-sm form-cadastro btn-inscreva-se">
+              <strong>INSCREVA-SE</strong></a> </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <footer class="text-light rodape">
+          <div class="container py-3">
+            <div class="text-center mb-4 p-4">
+              <ol class="list-unstyled lista-rodape d-flex justify-content-center">
+                <li class="mb-3" style="margin-right: 20px;">Termo e Avaliações</li>
+                <li class="mb-3" style="margin-right: 20px;">Política de Privacidade</li>
+                <li class="mb-3" style="margin-right: 20px;">Contato</li>
+                <li class="mb-3" style="margin-right: 20px;">Atendimento por WhatsApp</li>
+                <li class="mb-3" style="margin-right: 10px;">FAQ (Perguntas Frequentes)</li>
+              </ol>
+
+              <p class="mt-4">Curso Online Ltda - Todos os direitos reservados<br>CNPJ: 00.000.000./0000-00 Avenida 348 1306, Vila- Leopoldina - São Paulo SP</p>
+
+              <div class=" logotipo text-center align-items-center">
+                <img src="img/logo-branco.png" width="200" class="mb-2" alt="Logotipo">
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center">
                 <ul class="list-unstyled d-flex" style="margin: 0; padding: 0;">
                   <li class="rodape__item-midias-sociais mb-4 mr-4">
+<<<<<<< HEAD
                     <a href="https://m.facebook.com/Biteducacursos" class="icone-midia-social">
+=======
+<<<<<<< HEAD
+                    <a href="https://m.facebook.com/Biteducacursos" class="icone-midia-social">
+=======
+<<<<<<< HEAD
+                    <a href="https://www.facebook.com">
+=======
+                    <a href="https://m.facebook.com/Biteducacursos" class="icone-midia-social">
+>>>>>>> e944024 (pagina sobre e trilha realizadas)
+>>>>>>> ac4852d58079aafe7d1a1d475cdd1e8a23cc3e94
+>>>>>>> 5aa7dc8445cdc7630532799da3e4664a818c580e
                       <i class="fab fa-facebook-square"></i>
                     </a>
                   </li>
                   <li class="rodape__item-midias-sociais mb-4 mr-4">
+<<<<<<< HEAD
                     <a href="https://www.google.com/url?source=meet&sa=D&q=https%3A%2F%2Finstagram.com%2Fbiteducacursos%3Figshid%3DYTQwZjQ0NmI0OA%3D%3D&hl=pt-BR" class=" icone-midia-social">
+=======
+<<<<<<< HEAD
+                    <a href="https://www.google.com/url?source=meet&sa=D&q=https%3A%2F%2Finstagram.com%2Fbiteducacursos%3Figshid%3DYTQwZjQ0NmI0OA%3D%3D&hl=pt-BR" class=" icone-midia-social">
+=======
+<<<<<<< HEAD
+                    <a href="https://www.instagram.com">
+=======
+                    <a href="https://www.google.com/url?source=meet&sa=D&q=https%3A%2F%2Finstagram.com%2Fbiteducacursos%3Figshid%3DYTQwZjQ0NmI0OA%3D%3D&hl=pt-BR" class=" icone-midia-social">
+>>>>>>> e944024 (pagina sobre e trilha realizadas)
+>>>>>>> ac4852d58079aafe7d1a1d475cdd1e8a23cc3e94
+>>>>>>> 5aa7dc8445cdc7630532799da3e4664a818c580e
                       <i class="fab fa-instagram-square"></i>
                     </a>
                   </li>
                   <li class="rodape__item-midias-sociais mb-4 mr-4">
-                    <a href="https://www.linkedin.com/in/rduartedelima/" class="icone-midia-social">
+                    <a href="https://www.linkedin.com/in/rduartedelima/">
                       <i class="fab fa-linkedin"></i>
                     </a>
                   </li>
                   <li class="rodape__item-midias-sociais mb-4 mr-4">
-                    <a href="https://www.youtube.com/channel/UC5TvpjArLEoJnn5V5fG9chQ" class=" icone-midia-social">
+                    <a href="https://www.youtube.com/channel/UC5TvpjArLEoJnn5V5fG9chQ">
                       <i class="fab fa-youtube-square"></i>
                     </a>
                   </li>
                   <li class="rodape__item-midias-sociais mb-4">
-                    <a href="https://api.whatsapp.com/send?phone=5511941616806" class=" icone-midia-social">
+                    <a href="https://api.whatsapp.com/send?phone=5511941616806">
                       <i class="fab fa-whatsapp-square"></i>
                     </a>
                   </li>
                 </ul>
               </div>
-          </div>
-        </div>
-    </div>
-
-
-  </section>
-
-  <div class="parallax-section">
-    <div class="container mt-5 mb-4 parallax-content">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-left">
-                <h3 class="mb-3">CURSO GRATUITO</h3>
-                <h4 >Full Stack Duração 4 Meses</h4>
-                <p>Venha conhecer nosso curso</p>
+              <p>&copy; 2023 Copyright: Todos os direitos reservados</p>
             </div>
+<<<<<<< HEAD
+          </div>
+        </footer>
+=======
             <div class="col-md-6 text-center text-md-right">
               <a href="" class="btn btn-primary btn-sm form-cadastro btn-inscreva-se">
                 <strong>INSCREVA-SE</strong></a> </div>
@@ -357,9 +520,10 @@
     });
   });
   </script>
+>>>>>>> e944024 (pagina sobre e trilha realizadas)
 
         
-     
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       </body>
       </html>
