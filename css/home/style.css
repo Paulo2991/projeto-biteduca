@@ -23,20 +23,7 @@
   }
   
 
-  /* Estilos para o botão */
-  .btn {
-    color: #fff; /* Cor do texto branco */
-    background:linear-gradient(var(--bg-cor));
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Raio inicial dos cantos do botão */
-    transition: border-radius 0.3s; /* Transição suave de 0.3 segundos para a propriedade border-radius */
-  }
+  
   .btn-warning{
   background-color: #ecc100;
   color:#000;
@@ -74,11 +61,15 @@
     color: #fff; /* Cor do texto secundário */
     font-size: 25px; /* Tamanho da fonte do texto secundário */
   }
+
+
   
   .card.text-image-cabecalho {
     box-shadow: none; /* Remover a sombra */
     border: none; /* Remover a borda */
   }
+  
+  
 
 body{
   background:linear-gradient(var(--bg-cor));
@@ -142,95 +133,12 @@ body{
 
 }
 
-.parallax-time {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/img/equipebg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
-  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff; /* Cor do texto */
-  text-shadow: 2px 1px 1px #000; /* Cor e tamanho do contorno */
-  font-weight: bold;
-}
-
-.parallax-sobre {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('/img/img_lampada.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
-  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.parallax-time h2 {
-  margin-bottom: 2rem; /* Ajuste de margem inferior para o cabeçalho */
-}
-
-.team-member {
-  margin-bottom: 30px; /* Espaçamento entre membros da equipe */
-}
-
-.team-member img {
-  width: 100%; /* Ajuste a largura da imagem para ocupar 100% do contêiner pai */
-}
-
-.social-icons {
-  margin-top: 20px; /* Espaçamento superior para ícones sociais */
-}
-
-/* Adicione regras de mídia para ajustar estilos em tamanhos de tela menores */
-@media (max-width: 768px) {
-  .parallax-time {
-      padding: 30px 0; /* Reduza o preenchimento em telas menores */
-  }
-
-  .team-member {
-      margin-bottom: 20px; /* Reduza o espaçamento entre membros da equipe em telas menores */
-  }
-}
-
-/* Adicione regras de mídia para ajustar estilos em tamanhos de tela menores */
-@media (max-width: 768px) {
-  .parallax-section{
-      padding: 30px 0; /* Reduza o preenchimento em telas menores */
-      height: auto;
-  }
-
-
-}
-
-
-
-
-
-
-
-
-
-
 
 .highlight-text-bg {
   background: linear-gradient(45deg, rgba(7,98,217,0.3), rgba(62,35,107,0.3));
   padding: 5px; /* Espaçamento interno para destacar o texto */
   border-radius: 15px; /* Borda arredondada para destacar o texto */
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -299,7 +207,6 @@ body{
 
 
 
-
 .custom-card-text{
     font-size:18px;
     font-style:normal;
@@ -358,9 +265,130 @@ body{
 }
 
 
+.parallax-sobre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('/img/img_lampada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
+  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.parallax-time {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/img/equipebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
+  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Cor do texto */
+  text-shadow: 2px 1px 1px #000; /* Cor e tamanho do contorno */
+  font-weight: bold;
+}
+
+.parallax-time h2 {
+  margin-bottom: 2rem; /* Ajuste de margem inferior para o cabeçalho */
+}
+
+.team-member {
+  margin-bottom: 30px; /* Espaçamento entre membros da equipe */
+}
+
+.team-member img {
+  width: 100%; /* Ajuste a largura da imagem para ocupar 100% do contêiner pai */
+}
+
+.social-icons {
+  margin-top: 20px; /* Espaçamento superior para ícones sociais */
+}
+
+/* Adicione regras de mídia para ajustar estilos em tamanhos de tela menores */
+@media (max-width: 768px) {
+  .parallax-time {
+      padding: 30px 0; /* Reduza o preenchimento em telas menores */
+  }
+
+  .team-member {
+      margin-bottom: 20px; /* Reduza o espaçamento entre membros da equipe em telas menores */
+  }
+}
+
+/* Adicione regras de mídia para ajustar estilos em tamanhos de tela menores */
+@media (max-width: 768px) {
+  .parallax-section{
+      padding: 30px 0; /* Reduza o preenchimento em telas menores */
+      height: auto;
+  }
+
+
+}
 
 
 
+
+
+/* Trilha */
+.highlight2 {
+  background: #2c2c2c; 
+  padding: 0 5px; /* Adicione espaçamento interno para melhorar o destaque */
+}
+
+.parallax-trilha {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/img/trilha.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto; /* Alterado para altura automática para se ajustar ao conteúdo */
+  padding: 50px 0; /* Adicionado preenchimento para melhorar o espaçamento do conteúdo */
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+@media (max-width: 350px) {
+  /* Ocultar texto dentro da imagem em telas pequenas Trilha */
+  .card.text-image-cabecalho h3.card-title_trilha,
+  .card.text-image-cabecalho h6.card-text_trilha {
+    font-size: 2px;
+  }
+}
+
+.card.text-image-cabecalho h6.card-text_trilha {
+  color: #fff; /* Cor do texto secundário */
+  font-size: 25px; /* Tamanho da fonte do texto secundário */
+}
+.card.text-image-cabecalho h3.card-title_trilha {
+  color: #fff; /* Cor do título */
+  font-size: 30px; /* Tamanho da fonte do título */
+}
+
+@media (max-width: 580px) {
+  /* Estilos para o texto dentro da imagem */
+  .card.text-image-cabecalho h3.card-title_trilha{
+      color: #fff; /* Cor do título */
+      font-size: 10px; /* Tamanho da fonte do título */
+    }
+    
+    .card.text-image-cabecalho h6.card-text_trilha {
+      color: #fff; /* Cor do texto secundário */
+      font-size: 10px; /* Tamanho da fonte do texto secundário */
+    }
+   }
+
+    
 
 
  
@@ -399,7 +427,6 @@ body{
     }
   }
 
- 
 
   @media (max-width: 350px) {
     /* Ocultar texto dentro da imagem em telas pequenas */
