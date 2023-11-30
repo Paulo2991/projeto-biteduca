@@ -32,7 +32,7 @@
   }
   .btn-warning:hover{
     border-radius: 100px; /* Raio maior ao passar o mouse */
-    background:orange;
+    border:none;
   }
 
   /* Estilos para o botão ao passar o mouse */
@@ -40,17 +40,7 @@
     border-radius: 50px; /* Raio maior ao passar o mouse */
   }
 
-  .btn-inscreva-se{
-  color: #fff;
-  font-size: 20px;
-  background-color: #ecc100;
-  border-radius: 100px; /* Raio maior ao passar o mouse */
 
-  }
-
-  .btn-inscreva-se:hover{
-    background:orange;
-  }
 
   .card.text-image-cabecalho h3.card-title {
     color: #fff; /* Cor do título */
@@ -72,9 +62,7 @@
   
 
 body{
-  background:linear-gradient(var(--bg-cor));
-  
- 
+  background: linear-gradient(45deg, rgb(33, 5, 161,1), rgb(1, 1, 2, 1)); 
 }
 
 
@@ -104,14 +92,14 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ecc100; /* Cor do texto, ajuste conforme necessário */
+  color: #fff; /* Cor do texto, ajuste conforme necessário */
   text-shadow: 2px 1px 1px  #000; /* Cor e tamanho do contorno */
   font-weight: bold;
   font-size: 24px;
 
 }
 .parallax-bg .icone-midia-social i {
-  color: #ecc100; 
+  color: #fff; 
 }
 
 
@@ -126,9 +114,7 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ecc100; /* Cor do texto*/
-  text-shadow: 2px 1px 1px  #000; /* Cor e tamanho do contorno */
-  font-weight: bold;
+  color: #fff; /* Cor do texto*/
   font-size: 24px;
 
 }
@@ -150,14 +136,56 @@ body{
   }
   .card-home {
     border-radius: 20px;
-    border: 1px solid white; /* Adiciona uma borda branca */
-    box-shadow:3px 3px 3px 3px white;
+    box-shadow:3px 3px 3px 3px #000;
     border-radius: 20px;
-    background: linear-gradient(var(--bg-cor)); 
+    background: linear-gradient(45deg, rgb(252, 252, 252,0), rgba(7,98,217,0.9), rgb(1, 1, 2, 0.9));
     color: #fff;
     text-align: center;
   }
   
+  .card-img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    transition: transform 0.3s ease; 
+}
+
+.card-img-full:hover {
+    transform: scale(1.1); 
+}
+
+.card-img-full-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.card-img-full:hover {
+  transform: scale(1.1);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Ajuste a cor de fundo e a opacidade conforme necessário */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-img-full-container:hover .image-overlay {
+  opacity: 1;
+}
   
   .icone-link  {
       width: 50px;
@@ -225,7 +253,7 @@ body{
 }
 
 .highlight {
-  background: linear-gradient(var(--bg-cor)); 
+  background:#001540; 
   padding: 0 5px; /* Adicione espaçamento interno para melhorar o destaque */
 }
 
@@ -333,6 +361,21 @@ body{
 }
 
 
+/* Formações  */
+
+
+.descricao-curso {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Adiciona uma transição suave de 0.3 segundos para a mudança de cor */
+  text-align: justify;
+  text-align: center; /* Adiciona centralização horizontal */
+}
+
+
+.descricao-curso:hover {
+  background:  rgb(33, 5, 161,1); 
+}
 
 
 
@@ -710,4 +753,3 @@ body{
 
  
 }
-

@@ -6,11 +6,7 @@
   <title>Biteduca</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<<<<<<< HEAD
   <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css">
-=======
-  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
->>>>>>> ac4852d58079aafe7d1a1d475cdd1e8a23cc3e94
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon1.png">
 
   <link rel="stylesheet" href="/css/home/header.css">
@@ -28,19 +24,16 @@
 </head>
 <body>
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg  navbar-light bg-white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light custom-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">
-          <img src="/img/logo-colorido.png" alt="Seu Logotipo" width="150" >
+          <img src="/img/logo-branco.png" alt="Seu Logotipo" width="150" title="Home">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link menu-item" href="/index.html">Home</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                Cursos
@@ -51,7 +44,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link menu-item" href="#">Formações</a>
+              <a class="nav-link menu-item" href="/formacoes.html">Formações</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menu-item" href="sobre_nos.html">Sobre</a>
@@ -64,13 +57,11 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control form-control-sm me-2" type="search" placeholder="Cursos" aria-label="Cursos" id="searchInput">
+            
             <div class="btn-group" role="group">
-              <button class="btn btn-primary btn-sm form-search" type="button" id="toggleSearch">
-                <i class="fas fa-search form-icon"></i> <!-- Ícone de lupa corrigido -->
-              </button>
-              <a href="" class="btn btn-primary btn-sm form-cadastro">Cadastre</a>
-              <a href="" class="btn btn-primary btn-sm form-login ml-2">Login</a>
+             
+              <a href="/pages/cadastroAluno/cadastro-1.html" class="btn btn-primary btn-sm btn-degrade form-cadastro">Cadastre</a>
+              <a href="/pages/login.html" class="btn btn-primary btn-sm form-login btn-degrade ml-2">Login</a>
             </div>
           </form>
         </header>
@@ -81,10 +72,10 @@
                 <img src="/img/professor_trilha.jpg" class="card-img img-fluid fade-in" alt="...">
                 <div class="card-img-overlay h-100%">
                     <div class="mask fade-in text-image-cabecalho d-flex flex-column align-items-center justify-content-center text-center">
-                        <h3 class="card-title_trilha text-image-cabecalho" style="margin-top: 40px;">
+                        <h3 class="card-title_trilha text-image-cabecalho" style="margin-top: 40px;" style="margin-bottom: 20px;">
                             <span class="text-anim highlight2"></span>
                         </h3>
-                        <h6 class="card-text_trilha text-image-cabecalho" style="margin-bottom: 10px;">
+                        <h6 class="card-text_trilha text-image-cabecalho" style="margin-bottom: 20px;">
                             <span class="text-anim highlight2"></span>
                         </h6>
                     </div>
@@ -124,14 +115,14 @@
                         setTimeout(function () {
                             index = 0;
                             typeText(selector, text, speed);
-                        }, 5000); // Aguarde 5 segundo antes de reiniciar a animação
+                        }, 10000); // Aguarde 10 segundos antes de reiniciar a animação
                     }
                 }, speed);
             }
     
             // Chame a função para cada frase que deseja animar
             typeText('.card-title_trilha', 'Bem-vindo à nossa trilha de aprendizagem!', 100);
-            typeText('.card-text_trilha', 'Vamos navegar pelo site juntos e esclarecer suas dúvidas.', 50);
+            typeText('.card-text_trilha', 'Vamos navegar pelo site juntos e esclarecer suas dúvidas.', 100);
         </script>
     
       
