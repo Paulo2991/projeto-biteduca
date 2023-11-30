@@ -13,94 +13,124 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/menuPerfil/styles.css">
   <link rel="stylesheet" href="/css/areaDoAluno/areaDoAlono.css">
+  <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">
-        <img src="/img/logo-colorido.png" class="w-100" alt="Logo bit educa">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-          <li class="nav-item">
-            <a class="nav-link menu-item me-5" href="#">Cursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu-item me-5" href="#">Formações</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu-item me-5" href="#">Por onde começar?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu-item me-5" href="#">Como funciona</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu-item me-5" href="/pages/areaDoAluno.html">Área do Aluno</a>
-          </li>
-          <li class="nav-item dropdown menu-personalizado">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Nome
+  <header>
+    <nav class="navbar navbar-expand-lg  navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/img/logo-colorido.png" alt="Seu Logotipo" width="150">
             </a>
-            <ul class="dropdown-menu p-4">
-              <li>
-                <a class="dropdown-item item-personalizado mb-2" href="./perfilECertificados.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                    <path
-                      d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
-                  </svg>
-                  Perfil e certificados
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item item-personalizado mb-2" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                    <style>
-                      svg {
-                        fill: #8391ce
-                      }
-                    </style>
-                    <path
-                      d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
-                  </svg>
-                  Editar perfil
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item item-personalizado" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
-                    <path
-                      d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
-                  </svg>
-                  Minha matricula
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <a class="dropdown-item item-personalizado" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                    <path
-                      d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z" />
-                  </svg>
-                  Sair
-                </a>
-              </li>
-            </ul>
-          </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link menu-item" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu menu-item" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item active">Todos os Cursos</a></li>
+                            <li><a class="dropdown-item" href="curso_gratuito.html">Curso Gratuito</a></li>
+                        </ul>
+                    </li>
 
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
+                    <li class="nav-item">
+                        <a class="nav-link menu-item" href="#">Formações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-item" href="sobre_nos.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-item" href="#">Trilha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-item" href="#">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-item" href="/pages/areaDoAluno.html">Àrea do aluno</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Nome
+                        </a>
+                        <ul class="dropdown-menu menu-item" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item item-personalizado mb-2" href="./perfilECertificados.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                        <path
+                                            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                                    </svg>
+                                    Perfil e certificados
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item item-personalizado mb-2" href="./editarPerfil.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <style>
+                                            svg {
+                                                fill: #8391ce
+                                            }
+                                        </style>
+                                        <path
+                                            d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                    </svg>
+                                    Editar perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item item-personalizado mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                        <style>
+                                            svg {
+                                                fill: #8391ce
+                                            }
+                                        </style>
+                                        <path
+                                            d="M64 32C28.7 32 0 60.7 0 96V256 416c0 35.3 28.7 64 64 64H192c70.7 0 128-57.3 128-128c0-46.5-24.8-87.3-62-109.7c18.7-22.3 30-51 30-82.3c0-70.7-57.3-128-128-128H64zm96 192H64V96h96c35.3 0 64 28.7 64 64s-28.7 64-64 64zM64 288h96 32c35.3 0 64 28.7 64 64s-28.7 64-64 64H64V288z" />
+                                    </svg>
+                                    Portal do aluno
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item item-personalizado" href="./minhaMatricula.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+                                        <path
+                                            d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+                                    </svg>
+                                    Minha matricula
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item item-personalizado" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path
+                                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z" />
+                                    </svg>
+                                    Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-primary btn-sm form-search" type="button" id="toggleSearch">
+                    <i class="fas fa-search form-icon"></i> <!-- Ícone de lupa corrigido -->
+                </button>
+            </div>
+            </form>
+</header>
   <!--Cursos em andamento-->
   <section class="d-flex align-content-between justify-content-between bg-cursos-andamento cursos-andamento">
 
@@ -363,8 +393,59 @@
   </section>
   <!--Atividade no fórum-->
 
+  <!--
+  <footer class="text-light rodape">
+    <div class="container py-3">
+      <div class="text-center mb-4 p-4">
+        <ol class="list-unstyled lista-rodape d-flex justify-content-center">
+          <li class="mb-2" style="margin-right: 20px;">Termo e Avaliações</li>
+          <li class="mb-2" style="margin-right: 20px;">Política de Privacidade</li>
+          <li class="mb-2" style="margin-right: 20px;">Contato</li>
+          <li class="mb-2" style="margin-right: 20px;">Atendimento por WhatsApp</li>
+          <li class="mb-2" style="margin-right: 10px;">FAQ (Perguntas Frequentes)</li>
+        </ol>
 
+        <p class="mt-4">Curso Online Ltda - Todos os direitos reservados<br>CNPJ: 00.000.000./0000-00 Avenida
+          348 1306, Vila- Leopoldina - São Paulo SP</p>
 
+        <div class=" logotipo text-center align-items-center">
+          <img src="/img/logo-branco.png" width="200" class="mb-2" alt="Logotipo">
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+          <ul class="list-unstyled d-flex" style="margin: 0; padding: 0;">
+            <li class="rodape__item-midias-sociais mb-4 mr-4">
+              <a href="https://www.facebook.com">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="rodape__item-midias-sociais mb-4 mr-4">
+              <a href="https://www.instagram.com">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </li>
+            <li class="rodape__item-midias-sociais mb-4 mr-4">
+              <a href="https://www.linkedin.com/in/rduartedelima/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="rodape__item-midias-sociais mb-4 mr-4">
+              <a href="https://www.youtube.com/channel/UC5TvpjArLEoJnn5V5fG9chQ">
+                <i class="fab fa-youtube-square"></i>
+              </a>
+            </li>
+            <li class="rodape__item-midias-sociais mb-4">
+              <a href="https://api.whatsapp.com/send?phone=5511941616806">
+                <i class="fab fa-whatsapp-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>&copy; 2023 Copyright: Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
