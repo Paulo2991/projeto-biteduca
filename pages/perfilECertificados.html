@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" style="margin-left: 40px;">
+                <a class="navbar-brand" href="/index.html" style="margin-left: 40px;">
                     <img src="/img/logo-branco.png" alt="Seu Logotipo" width="150" title="Home">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -51,14 +51,18 @@
                         <li class="nav-item">
                             <a class="nav-link menu-item" href="#">Como funciona</a>
                         </li>
-                        <li class="nav-item dropdown">
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="/pages/areaDoAluno.html">Àrea do aluno</a>
+                        </li>
+                        <li class="nav-item dropstart">
                             <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Jhon
+                                <img src="/img/aluno-teste.jpg" class="rounded-circle foto-aluno" alt="Foto do aluno">
                             </a>
                             <ul class="dropdown-menu menu-item" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="dropdown-item item-personalizado mb-2" href="./perfilECertificados.html">
+                                    <a class="dropdown-item mb-2" href="./perfilECertificados.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                                             <path
                                                 d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
@@ -117,9 +121,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-item" href="/pages/areaDoAluno.html">Àrea do aluno</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -133,7 +134,8 @@
             <p class="fst-italic">
                 Seu perfil está um pouco vazio. Preencha suas áreas de interesse, biografia e redes sociais e aumente o
                 nível do seu perfil.
-                <a href="#">Clique aqui para editar. </a>
+                <!--Colocar para ir até a parte de editar biografia-->
+                <a href="/pages/editarPerfil.html">Clique aqui para editar. </a>
 
             </p>
         </div>
@@ -142,8 +144,9 @@
             <div class="bg-foto">
 
                 <div class="img-aluno text-center">
-                    <img src="/img/aluno-teste.jpg" class="rounded-circle mt-4" alt="pessoa sorrindo">
+                    <img src="/img/aluno-teste.jpg" class="rounded-circle mt-4" alt="foto do aluno">
                 </div>
+                <span class="redes-sociais d-flex flex-wrap justify-content-evenly"><!--Icone de redes sociais--></span>
             </div>
 
             <div class="bg-foto-baixo text-center">
@@ -161,7 +164,8 @@
 
         <div class="d-flex cursos-concluidos">
             <div class="card mb-3 ms-4 card-pesonalizado-cor" style="max-width: 18rem;">
-                <div class="card-header"><img src="/img/certificado.png" class="icon-certificado" alt=""></div>
+                <div class="card-header"><img src="/img/certificado.png" class="icon-certificado"
+                        alt="icone certificado"></div>
                 <div class="card-body">
                     <img src="/img/img-full-stack.png" class="rounded-circle w-100 h-auto" alt="">
                     <h5 class="card-title">Full-Stack</h5>
@@ -175,11 +179,14 @@
                     <a href=""><small class="text-black-50 text-decoration-none">Adcionar ao perfil</small></a>
 
                 </div>
-
+            </div>
+            <div class="d-none">
+                <h4>Suas formações e cursos concluídos ficarão aqui!</h4>
             </div>
 
             <div class="card mb-3 ms-4 card-pesonalizado-cor" style="max-width: 18rem;">
-                <div class="card-header"><img src="/img/certificado.png" class="icon-certificado" alt=""></div>
+                <div class="card-header"><img src="/img/certificado.png" class="icon-certificado"
+                        alt="icone certificado"></div>
                 <div class="card-body">
                     <img src="/img/teste-python.jpg" class="rounded-circle w-100 h-auto" alt="">
                     <h5 class="card-title">Formação em python</h5>
@@ -204,8 +211,9 @@
         <div class="titulo m-0">
             <h2 class="text-white text-center">Selos</h2>
         </div>
-
-        <img src="/img/img-premio.jpg" class="img-thumbnail w-25" alt="">
+        <div class="d-flex flex-wrap justify-content-evenly mt-2 mb-2">
+            <img src="/img/premios.png" class="img-thumbnail w-25" alt="">
+        </div>
     </section>
     <!--Prêmios-->
 
