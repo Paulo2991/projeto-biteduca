@@ -8,15 +8,17 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="/css/minhaMatricula/style.css">
+    <link rel="stylesheet" href="/css/home/header.css">
+    <link rel="stylesheet" href="/css/home/footer.css">
     <title>Minha mátricula | Biteduca</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg  navbar-light bg-white">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="/img/logo-colorido.png" alt="Seu Logotipo" width="150">
+                <a class="navbar-brand" href="index.html" style="margin-left: 40px;">
+                    <img src="/img/logo-branco.png" alt="Seu Logotipo" width="150" title="Home">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,26 +39,22 @@
                                 <li><a class="dropdown-item" href="curso_gratuito.html">Curso Gratuito</a></li>
                             </ul>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link menu-item" href="#">Formações</a>
+                            <a class="nav-link menu-item" href="formacoes.html">Formações</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-item" href="sobre_nos.html">Sobre</a>
+                            <a class="nav-link menu-item" href="/pages/sobre_nos.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-item" href="#">Trilha</a>
+                            <a class="nav-link menu-item" href="/pages/trilha.html">Trilha</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-item" href="#">Como funciona</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-item" href="/pages/areaDoAluno.html">Àrea do aluno</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Nome
+                                Jhon
                             </a>
                             <ul class="dropdown-menu menu-item" aria-labelledby="navbarDropdown">
                                 <li>
@@ -119,12 +117,13 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="/pages/areaDoAluno.html">Àrea do aluno</a>
+                        </li>
                     </ul>
-                    <button class="btn btn-primary btn-sm form-search" type="button" id="toggleSearch">
-                        <i class="fas fa-search form-icon"></i> <!-- Ícone de lupa corrigido -->
-                    </button>
                 </div>
-                </form>
+            </div>
+        </nav>
     </header>
 
     <main class=" p-5 bg-minha-matricula">
@@ -132,11 +131,13 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Meu plano atual</button>
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Meu plano
+                        atual</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Histórico</button>
+                        type="button" role="tab" aria-controls="profile-tab-pane"
+                        aria-selected="false">Histórico</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
@@ -154,7 +155,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
                     <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Plano mensal</h5>
@@ -162,7 +164,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
                     <section class="d-flex justify-content-evenly flex-wrap w-100">
                         <div class="card text-bg-light mb-3" style="max-width: 18rem;">
                             <div class="card-header d-flex">
@@ -176,9 +179,9 @@
                                 </a>
                             </div>
                         </div>
-    
-    
-    
+
+
+
                         <div class="card text-bg-light mb-3" style="max-width: 18rem;">
                             <div class="card-header d-flex">
                                 <i class="fa-solid fa-magnifying-glass" style="color: #8391ce;"></i>
@@ -191,8 +194,8 @@
                                 </a>
                             </div>
                         </div>
-    
-    
+
+
                         <div class="card text-bg-light mb-3" style="max-width: 18rem;">
                             <div class="card-header d-flex">
                                 <i class="fa-regular fa-comment-dots" style="color: #8391ce;"></i>
@@ -211,6 +214,60 @@
         </section>
 
     </main>
+
+    <footer class="text-light rodape">
+        <div class="container py-3">
+            <div class="text-center mb-4 p-4">
+                <ol class="list-unstyled lista-rodape d-flex justify-content-center">
+                    <li class="mb-2" style="margin-right: 20px;">Termo e Avaliações</li>
+                    <li class="mb-2" style="margin-right: 20px;">Política de Privacidade</li>
+                    <li class="mb-2" style="margin-right: 20px;">Contato</li>
+                    <li class="mb-2" style="margin-right: 20px;">Atendimento por WhatsApp</li>
+                    <li class="mb-2" style="margin-right: 10px;">FAQ (Perguntas Frequentes)</li>
+                </ol>
+
+                <p class="mt-4">Curso Online Ltda - Todos os direitos reservados<br>CNPJ: 00.000.000./0000-00 Avenida
+                    348 1306, Vila- Leopoldina - São Paulo SP</p>
+
+                <div class=" logotipo text-center align-items-center">
+                    <img src="/img/logo-branco.png" width="200" class="mb-2" alt="Logotipo">
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <ul class="list-unstyled d-flex" style="margin: 0; padding: 0;">
+                        <li class="rodape__item-midias-sociais mb-4 mr-4">
+                            <a href="https://m.facebook.com/Biteducacursos">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li class="rodape__item-midias-sociais mb-4 mr-4">
+                            <a
+                                href="https://www.google.com/url?source=meet&sa=D&q=https%3A%2F%2Finstagram.com%2Fbiteducacursos%3Figshid%3DYTQwZjQ0NmI0OA%3D%3D&hl=pt-BR">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li class="rodape__item-midias-sociais mb-4 mr-4">
+                            <a href="https://www.linkedin.com/in/rduartedelima/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="rodape__item-midias-sociais mb-4 mr-4">
+                            <a href="https://www.youtube.com/channel/UC5TvpjArLEoJnn5V5fG9chQ">
+                                <i class="fab fa-youtube-square"></i>
+                            </a>
+                        </li>
+                        <li class="rodape__item-midias-sociais mb-4">
+                            <a href="https://api.whatsapp.com/send?phone=5511941616806">
+                                <i class="fab fa-whatsapp-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>&copy; 2023 Copyright: Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
