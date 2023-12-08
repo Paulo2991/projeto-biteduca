@@ -28,6 +28,11 @@ header {
   position: relative;
 }
 
+/*Estilo para a foto do aluno no cabeçalho*/
+.foto-aluno{
+  height: 3rem;
+}
+
 .navbar {
   z-index: 1; /* Coloca o menu sobre a imagem */
 }
