@@ -1,0 +1,76 @@
+ <div class=" align-items-start  ms-4 me-4">
+
+
+                    <div class="row ">
+                        <div class="card bg-white mb-3 col-md-6 col-lg-4" style="max-width: 18rem;">
+                            <h4 class="card-header">Plano mensal</h4>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Pagamento mensal.</li>
+                                    <li>Plataforma liberada após a matrícula.</li>
+                                    <li>Receba o certificado ao finalizar o curso.</li>
+                                    <li>Acesso a todas as formações.</li>
+                                    <li>Aulas gravadas.</li>
+                                    <li>Acesso a plantões de duvidas ao vivo com os instrutores.</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <p>De R$80,00 por</p>
+                                    <strong class="preco-card">R$47,00</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-white mb-3 col-md-6 col-lg-4" style="max-width: 18rem;">
+                            <h4 class="card-header">Plano 60</h4>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Modulo escolhido liberado por 60 dias.</li>
+                                    <li>Plataforma liberada após a matrícula.</li>
+                                    <li>Receba o certificado ao finalizar o curso.</li>
+                                    <li>Aulas gravadas.</li>
+                                    <li>Plantões de duvidas com os instrutores.</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <p>De R$120,00 por</p>
+                                    <strong class="preco-card">R$94,00</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-white mb-3 col-md-6 col-lg-4" style="max-width: 18rem;">
+                            <h4 class="card-header">Plano pro</h4>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Pagamento anual.</li>
+                                    <li>Plataforma liberada após a matrícula.</li>
+                                    <li>Receba o certificado ao finalizar o curso.</li>
+                                    <li>Acesso a todas as formações.</li>
+                                    <li>Aulas gravadas.</li>
+                                    <li>Acesso a plantões de duvidas ao vivo com os instrutores.</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <p>Á vista R$528,00 ou 12 x</p>
+                                    <strong class="preco-card">R$44,00</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-white mb-3 col-md-6 col-lg-4" style="max-width: 18rem;">
+                            <h4 class="card-header">Plano plus</h4>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Aulas ao vivo.</li>
+                                    <li>Plataforma liberada após a matrícula.</li>
+                                    <li>Receba o certificado ao finalizar o curso.</li>
+                                    <li>Acesso á formação escolhida.</li>
+                                    <li>Material de apoio.</li>
+                                    <li>Acesso a plantões de duvidas ao vivo com os instrutores.</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <p>Á vista R$600,00 ou 12 x</p>
+                                    <strong class="preco-card">R$50,00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
