@@ -17,10 +17,10 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg  navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="/img/logo-colorido.png" alt="Seu Logotipo" width="150">
+                <a class="navbar-brand" href="/index.html" style="margin-left: 40px;">
+                    <img src="/img/logo-branco.png" alt="Seu Logotipo" width="150" title="Home">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link menu-item" href="/index.html">Home</a>
+                            <a class="nav-link menu-item" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -42,31 +42,24 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-item" href="#">Formações</a>
+                            <a class="nav-link menu-item" href="formacoes.html">Formações</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-item" href="sobre_nos.html">Sobre</a>
+                            <a class="nav-link menu-item" href="pages/sobre_nos.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-item" href="#">Trilha</a>
+                            <a class="nav-link menu-item" href="pages/trilha.html">Trilha</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-item" href="#">Como funciona</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control form-control-sm me-2" type="search" placeholder="Cursos"
-                            aria-label="Cursos" id="searchInput">
-                        <div class="btn-group" role="group">
-                            <button class="btn btn-primary btn-sm form-search" type="button" id="toggleSearch">
-                                <i class="fas fa-search form-icon"></i> <!-- Ícone de lupa corrigido -->
-                            </button>
-                            <a href="/pages/cadastroAluno/cadastro-1.html"
-                                class="btn btn-primary btn-sm form-cadastro">Cadastre</a>
-                            <a href="/pages/login.html" class="btn btn-primary btn-sm form-login ml-2">Login</a>
-                        </div>
-                    </form>
+                    <div class="btn-group" role="group">
+                        <a href="/pages/login.html" class="btn btn-primary btn-sm form-login btn-degrade ml-2">Login</a>
+                    </div>
                 </div>
+            </div>
+        </nav>
     </header>
 
     <main class="container-fluid container-customizado d-flex align-items-center justify-content-center ">
@@ -190,7 +183,8 @@
                 </ol>
 
                 <p class="mt-4">Curso Online Ltda - Todos os direitos reservados<br>CNPJ: 00.000.000./0000-00 Avenida
-                    348 1306, Vila- Leopoldina - São Paulo SP</p>
+                    348 1306,
+                    Vila- Leopoldina - São Paulo SP</p>
 
                 <div class=" logotipo text-center align-items-center">
                     <img src="/img/logo-branco.png" width="200" class="mb-2" alt="Logotipo">
