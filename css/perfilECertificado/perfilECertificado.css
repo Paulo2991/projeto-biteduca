@@ -37,6 +37,12 @@
     margin-right: 200px;
 }
 
+.foto-aluno{
+    height: 3rem;
+}
+
+/*Responsividade*/
+
 @media screen and (max-width:900px) {
     .perfil-customizado{
         flex-direction: column;
@@ -47,6 +53,9 @@
    
     .card-pesonalizado-cor{
         max-width: 100%;
+    }
+    .perfil{
+        order: -1;
     }
 }
 

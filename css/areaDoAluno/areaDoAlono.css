@@ -1,12 +1,18 @@
+:root{
+    --azul:#0762d9;
+}
 .item-personalizado{
     color: var(--azul);
 }
-.menu-personalizado{
-    margin-right: 10rem;
+
+.foto-aluno{
+    height: 3rem;
 }
+
 .titulo-cursos{
     color: #454545;
 }
+
 .barra-customizada{
     background-color:  #3fbd23 ;
 }
@@ -31,15 +37,19 @@
 .sobre-titulo{
     background-color:#ecc100;
 }
+
 .bg-formacoes{
     background-color: #999999;
 }
+
 .bg-testes{
    background-color: #ecf0f1;
 }
+
 .bg-sobre{
     background-color: #999999;
 }
+
 .envio-atividades{
     background-color:  #aed6f1;
 }
@@ -51,6 +61,8 @@
 .mobile{
     display: none;
 }
+
+/*Responsividade*/
 
 @media screen and (max-width:720px) {
 
