@@ -27,7 +27,7 @@
 
   
   .btn-warning{
-  background-color: #ecc100;
+  background-color: #edb106;
   color:#000;
   text-decoration: none;
 
@@ -65,6 +65,7 @@
 
 body{
   background: linear-gradient(45deg, rgb(33, 5, 161,1), rgb(1, 1, 2, 1)); 
+  
 }
 
 
@@ -435,8 +436,148 @@ body{
 
     
 
+/* Formações em Full Stack */
 
+
+
+
+.btn-azul {
+  background:#003077; 
+  color: #ffffff; /* Cor do texto */
+  border: 0.5 px solid #fff; /* Cor da borda e largura da borda */
+  border-radius: 30px; /* Raio da borda */
+}
+
+/* Ícone dentro do botão */
+.btn-azul::after {
+  color: #fff; /* Cor do ícone */
+}
+
+/* Cor do texto do acordeão quando não está expandido */
+.btn-azul.collapsed {
+  color: #fff; /* Cor do texto quando o botão está colapsado */
+}
+/* Cor do texto de fundo quando o botão está expandido */
+.btn-azul:not(.collapsed) {
+  background-color: #001540; /* Cor de fundo quando o botão está expandido */
+  color: #fff; /* Cor do texto quando o botão está expandido */
+}
+
+.white-text {
+  color: white;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio for responsive behavior */
+  height: 0;
+  overflow: hidden;
  
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video_previa{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+
+.container-fixed {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.fixed-left {
+  position: sticky;
+  top: 56px; /* Altura da barra de navegação */
+  height: calc(100vh - 56px); /* Altura total da tela menos a altura da barra de navegação */
+  padding: 20px;
+ 
+}
+
+.scrollable-right {
+  flex: 1; /* Ajusta o tamanho da coluna direita para ocupar o restante do espaço disponível */
+  padding: 20px;
+  position: relative;
+  z-index: 0; /* Defina um valor de z-index maior que o do elemento */
+}
+
+
+
+
+
+
+
+   @media (max-width: 1400px) {
+    /* Estilos do Título */
+.card h3.card-title-form {
+  font-size: 220%;
+  font-weight: bold;
+  text-align: left;
+  margin-top:  80px;
+  
+}
+/* Estilos do Texto */
+.card h6.card-text-form {
+  font-size: 180%;
+  text-align: left;
+  margin-right: 40px;
+}
+
+   }
+
+   @media (max-width: 1100px) {
+    /* Estilos do Título */
+.card h3.card-title-form {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: left;
+  margin-top:  200px;
+  
+}
+/* Estilos do Texto */
+.card h6.card-text-form {
+  font-size: 140%;
+  text-align: left;
+  margin-right: 40px;
+}
+
+   }
+   
+@media screen and (max-width: 540px) {
+/* Ocultar imagem e descrição em telas menores (largura máxima de 768 pixels) */
+img.img-fluid.fade-in-professor,
+h6.card-text-professor {
+display: none;
+}
+    /* Estilos do Título */
+.card h3.card-title-form {
+  font-size: 80%;
+  font-weight: bold;
+  text-align: left;
+  margin-top:  140px;
+  
+}
+/* Estilos do Texto */
+.card h6.card-text-form {
+  font-size: 70%;
+  text-align: left;
+  margin-right: 40px;
+}
+
+   }
+
+
+  
 
 /* Estilos para telas com no máximo 480px */
 
